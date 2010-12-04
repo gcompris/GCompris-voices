@@ -23,21 +23,21 @@ It is best to choose somebody that speaks and articulate well your language.
 - Apply loudness transform with sox if necessary.
 	You may such script if the sound is too low :
 	#!/bin/sh
-	for i; do
-	  sox $i modif/$i vol 5.0 amplitude 0.05
+	mkdir modif
+	for i in *.wav; do
+	  sox $i -r 44100 -b 16 modif/$i norm
 	done
 
-- In the directory where WAV files are run do:
+  Here all the normalize voices will be in the directory 'modif'
+  just under your current directory.
+
+- In the directory where WAV files are, run:
         oggenc -q0 --downmix -a "(name of author) -d "date of recording" \
                -c "copyright=GPL V3+" *.wav
 
 	ogginfo should display the comment.
 
 - Copy OGG files in the corresponding directory
-
-- Normalize them so that the all have the same volume level (replace ll by your locale)
-        cd boards/voices/
-        normalize-ogg ll/*/*.ogg
 
 3) Shipping
    --------
