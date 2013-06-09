@@ -570,6 +570,7 @@ under.ogg:under
 wet.ogg:wet
 wheat.ogg:wheat
 # Little ack, these are in voice/alphabet
+U0030.ogg:zero
 U0031.ogg:one
 U0032.ogg:two
 U0033.ogg:three

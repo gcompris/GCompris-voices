@@ -968,6 +968,7 @@ zebra.ogg:zèbre
 zero.ogg:zéro
 zipper.ogg:fermeture éclair
 # Little ack, these are in voice/alphabet
+U0030.ogg:zéro
 U0031.ogg:un
 U0032.ogg:deux
 U0033.ogg:trois
