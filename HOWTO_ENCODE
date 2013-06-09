@@ -1,0 +1,61 @@
+
+This document describes howto create a localized version of the voices.
+
+1) Create your voices directory
+   ----------------------------
+First copy the english voices as a template in a new directory with you locale name (e.g. my)
+cd boards/voices
+cp -r en my
+
+Provide here voice translation in boards/voices/my for each english voice.
+
+2) Recording / Encoding
+   --------------------
+It is best to choose somebody that speaks and articulate well your language.
+
+- Record with rec, grecord, bcast2000, gnoise, audacity
+  (mono wav 16bit/44100Hz gives the best quality/space ratio)
+
+  44100Hz is MANDATORY. On some system with bad supported sound card
+  other frequency lead to major troubles.
+
+- Save as WAV file
+- Apply loudness transform with sox if necessary.
+	You may such script if the sound is too low :
+	#!/bin/sh
+	mkdir modif
+	for i in *.wav; do
+	  sox $i -r 44100 -b 16 modif/$i norm
+	done
+
+  Here all the normalize voices will be in the directory 'modif'
+  just under your current directory.
+
+- In the directory where WAV files are, run:
+        oggenc -q0 --downmix -a "(name of author) -d "date of recording" \
+               -c "copyright=GPL V3+" *.wav
+
+	ogginfo should display the comment.
+
+- Copy OGG files in the corresponding directory
+
+3) Shipping
+   --------
+Once done, the easiest way is to tar all this files and send them to the gcompris maintainer.
+cd boards/voices
+tar -cvzf voices_my.tgz my
+
+4) Integration
+   -----------
+Nothing has to be done, just run 'make install' at GCompris to level. The voices
+will be installed in the proper directory and GCompris will play them.
+Run gcompris in your locale and you should ear your voices.
+
+5) Checking
+   --------
+At top level, run:
+./tools/check_missing_voices.pl <locale>
+
+With for example locale being fr for French.
+
+
