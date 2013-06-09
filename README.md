@@ -1,0 +1,2 @@
+GCompris-voices
+===============
