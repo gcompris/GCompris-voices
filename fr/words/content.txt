@@ -261,7 +261,7 @@ dragonfly.ogg:libellule
 dragon.ogg:dragon
 drawer.ogg:tiroir
 dress.ogg:robe
-drinking.ogg:bu
+drinking.ogg:boire
 drink.ogg:boisson
 drip.ogg:goutte
 drive.ogg:conduire
@@ -671,7 +671,6 @@ red.ogg:rouge
 reptile.ogg:reptile
 rhinoceros.ogg:rhinocéros
 rice.ogg:riz
-ride.ogg:vélo
 rifle.ogg:fusil
 right.ogg:droite
 rip.ogg:déchirer
