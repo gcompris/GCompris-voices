@@ -102,7 +102,6 @@ chimp.ogg:muncaidh beag
 chin.ogg:smiogaid mòr
 chocolate.ogg:seòclaid mhath
 chop.ogg:a' gearradh
-chore.ogg:obair mhòr
 clam.ogg:creachann mòr
 clap.ogg:a' bualadh basan
 class.ogg:clas math
