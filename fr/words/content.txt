@@ -1,971 +1,1096 @@
-accountant.ogg:comptable
-ache.ogg:douleur
-acorn.ogg:gland
-actor.ogg:acteur
-air_horn.ogg:klaxon
-alarmclock.ogg:réveil
-alligator.ogg:alligator
-alphabet.ogg:alphabet
-anchor.ogg:ancre
-angel.ogg:ange
-angry.ogg:colère
-ankle.ogg:cheville
-anteater.ogg:fourmilier
-antelope.ogg:antilope
-ant.ogg:fourmi
-apple.ogg:pomme
-apple_tree.ogg:pommier
-appliance.ogg:appareil
-apricot.ogg:abricot
-armchair.ogg:fauteuil
-arm.ogg:bras
-artichoke.ogg:artichaut
-artist.ogg:artiste
-asparagus.ogg:asperge
-astronaut.ogg:astronaute
-athlete.ogg:athlète
-avocado.ogg:avocat
-ax.ogg:hache
-baby_bottle.ogg:biberon
-back.ogg:dos
-badge.ogg:décoration
-bag.ogg:sac
-bait.ogg:appât
-balance.ogg:balance
+accountant.ogg:un comptable
+ache.ogg:la douleur
+acorn.ogg:un gland
+actor.ogg:un acteur
+air_horn.ogg:un klaxon
+alarmclock.ogg:un réveil
+alligator.ogg:un alligator
+alphabet.ogg:un alphabet
+anchor.ogg:une ancre
+angel.ogg:un ange
+angry.ogg:la colère
+animal.ogg:les animaux
+ankle.ogg:la cheville
+ant.ogg:une fourmi
+anteater.ogg:un fourmilier
+antelope.ogg:une antilope
+apple.ogg:une pomme
+apple_tree.ogg:un pommier
+appliance.ogg:un appareil
+apricot.ogg:un abricot
+arm.ogg:un bras
+armchair.ogg:un fauteuil
+artichoke.ogg:un artichaut
+artist.ogg:un artiste
+asparagus.ogg:une asperge
+astronaut.ogg:un astronaute
+#ate.ogg:NA
+athlete.ogg:un athlète
+avocado.ogg:un avocat
+ax.ogg:une hache
+baby_bottle.ogg:un biberon
+back.ogg:le dos
+badge.ogg:une décoration
+bag.ogg:un sac
+bait.ogg:un appât
+bake.ogg:cuisiner
+balance.ogg:une balance
 bald.ogg:chauve
-ballet.ogg:ballet
-ball_of_yarn.ogg:pelotte
-ball.ogg:balle
-ball_soccer.ogg:ballon
-bank.ogg:banque
+ball.ogg:une balle
+ball_of_yarn.ogg:une pelote
+ball_soccer.ogg:un ballon de foot
+ballet.ogg:un ballet
+bank.ogg:une banque
+banker_female.ogg:une employée de banque
 bark.ogg:aboyer
-barn.ogg:grange
-bathing_suit.ogg:maillot
-bath.ogg:bain
-bat.ogg:chauve-souris
-bay.ogg:baie
-beach.ogg:plage
-bead.ogg:bulle
-bean.ogg:haricot
-beard.ogg:barbe
-bear.ogg:ours
-beaver.ogg:castor
-bed.ogg:lit
-bedroom.ogg:chambre
-beef.ogg:boeuf
-bee.ogg:abeille
-beetle.ogg:scarabée
+barn.ogg:une grange
+bat.ogg:une chauve-souris
+bath.ogg:un bain
+bathing_suit.ogg:un maillot
+bay.ogg:une baie
+beach.ogg:une plage
+bead.ogg:une bulle
+bean.ogg:un haricot
+bear.ogg:un ours
+beard.ogg:une barbe
+beat.ogg:se battre
+beaver.ogg:un castor
+bed.ogg:un lit
+bedroom.ogg:une chambre
+bee.ogg:une abeille
+beef.ogg:du boeuf
+beetle.ogg:un scarabée
+beg.ogg:supplier
 behind.ogg:derrière
-bell.ogg:cloche
-belly.ogg:ventre
-bench.ogg:banc
-bib.ogg:bavoir
+bell.ogg:une cloche
+belly.ogg:le ventre
+bench.ogg:un banc
+bib.ogg:un bavoir
 big.ogg:grand
-big_top.ogg:chapiteau
-bike.ogg:vélo
-bird.ogg:oiseau
-bit.ogg:morceau
-blackberry.ogg:mûre
+big_top.ogg:un chapiteau
+bike.ogg:un vélo
+bird.ogg:un oiseau
+bit.ogg:un morceau
+bite.ogg:croquer
 black.ogg:noir
-blade.ogg:lame
-blind.ogg:aveugle
+blackberry.ogg:un mûre
+blackbird.ogg:un merle
+blade.ogg:une lame
+blind.ogg:un aveugle
 blink.ogg:cligner
+block.ogg:un bloc
 blond.ogg:blond
-blueberry.ogg:myrtille
 blue.ogg:bleu
+blueberry.ogg:une myrtille
 blush.ogg:rougir
-boat.ogg:bateau
+board.ogg:une planche
+boat.ogg:une barque
 boil.ogg:bouillir
-bolt.ogg:boulon
-bomb.ogg:bombe
-bone.ogg:os
-bookcase.ogg:bibliothèque
-book.ogg:livre
-box.ogg:boîte
-boy.ogg:garçon
-braid.ogg:tresse
-brain.ogg:cerveau
-branch.ogg:branche
-bread.ogg:pain
+bolt.ogg:un boulon
+bomb.ogg:une bombe
+bone.ogg:un os
+book.ogg:un livre
+bookcase.ogg:une bibliothèque
+bottom.ogg:le derrière
+box.ogg:une boîte
+boxer.ogg:boxer
+boy.ogg:un garçon
+braid.ogg:une tresse
+brain.ogg:un cerveau
+branch.ogg:une branche
+bread.ogg:du pain
 break.ogg:casser
-breast.ogg:poitrine
-bricklayer.ogg:maçon
-brick.ogg:brique
-bride.ogg:mariée
-bridge.ogg:pont
+breast.ogg:la poitrine
+brick.ogg:une brique
+bricklayer.ogg:un maçon
+bride.ogg:la mariée
+bridge.ogg:un pont
 bright.ogg:brillant
-broccoli.ogg:brocoli
-brother.ogg:frère
+broccoli.ogg:un brocoli
+brother.ogg:un frère
 brown.ogg:brun
-brush.ogg:pinceau
-bubble.ogg:bulle
-bucket.ogg:seau
-bud.ogg:bourgeon
-buffalo.ogg:buffle
-bug.ogg:insecte
-bulb.ogg:ampoule
-bull.ogg:taureau
-bump.ogg:bosse
-bun.ogg:brioche
-bush.ogg:buisson
-bus.ogg:bus
-butcher.ogg:boucher
-butterfly.ogg:papillon
-butter.ogg:beurre
-button.ogg:bouton
-cabbage.ogg:chou
-cabin.ogg:cabane
-cacao.ogg:cacao
-cactus.ogg:cactus
-cage.ogg:cage
-cake.ogg:gâteau
+brush.ogg:un pinceau
+bubble.ogg:une bulle
+bucket.ogg:un seau
+bud.ogg:un bourgeon
+buffalo.ogg:un buffle
+bug.ogg:un insecte
+bulb.ogg:une ampoule
+bull.ogg:un taureau
+bump.ogg:une bosse
+bun.ogg:une brioche
+bus.ogg:un bus
+bush.ogg:un buisson
+butcher.ogg:un boucher
+butter.ogg:du beurre
+butterfly.ogg:un papillon
+button.ogg:un bouton
+cabbage.ogg:un chou
+cabin.ogg:une cabane
+cacao.ogg:du cacao
+cactus.ogg:un cactus
+cage.ogg:une cage
+cake.ogg:un gâteau
 call.ogg:appeler
-camel.ogg:chameau
-camp.ogg:camping
-canary.ogg:canari
-candle.ogg:bougie
-candy.ogg:bonbon
-cane.ogg:cane
-canoe.ogg:canoë
-canon.ogg:canon
-canyon.ogg:canyon
-cape.ogg:cape
-carafe.ogg:carafe
-card.ogg:carte
-carnival.ogg:carnaval
-car.ogg:voiture
-carpenter.ogg:charpentier
-carpet.ogg:tapis
-carrot.ogg:carotte
-cart.ogg:cady
-cash.ogg:argent
-castle.ogg:château
+camel.ogg:un chameau
+camera.ogg:un appareil photo
+camp.ogg:un camping
+canary.ogg:un canari
+candle.ogg:une bougie
+candy.ogg:un bonbon
+cane.ogg:une cane
+canoe.ogg:un canoë
+canon.ogg:un canon
+canyon.ogg:un canyon
+cap.ogg:une casquette
+cape.ogg:une cape
+car.ogg:une voiture
+carafe.ogg:une carafe
+card.ogg:une carte
+carnival.ogg:le carnaval
+carpenter.ogg:un charpentier
+carpet.ogg:un tapis
+carrot.ogg:une carotte
+cart.ogg:un cady
+cash.ogg:de l'argent
+castle.ogg:un château
+cat.ogg:un chat
+cat_female.ogg:une chatte
 catch.ogg:attraper
-caterpillar.ogg:chenille
-cat_female.ogg:chatte
-cat.ogg:chat
-cauldron.ogg:chaudron
-cauliflower.ogg:chou-fleur
-cavern.ogg:caverne
-celery.ogg:céleri
-cereal.ogg:céréale
-chain.ogg:chaîne
-chair.ogg:chaise
-chalk.ogg:craie
-chameleon.ogg:caméléon
+caterpillar.ogg:une chenille
+cauldron.ogg:un chaudron
+cauliflower.ogg:un chou-fleur
+cavern.ogg:une caverne
+celery.ogg:un céleri
+centipede.ogg:un mille-pattes
+cereal.ogg:une céréale
+chain.ogg:une chaîne
+chair.ogg:une chaise
+chalk.ogg:une craie
+chameleon.ogg:un caméléon
+chandelier.ogg:un lustre
 chat.ogg:discuter
-cheek.ogg:joue
-cheese.ogg:fromage
-chef.ogg:cuisinier
-cherry.ogg:cerise
-chicken.ogg:poulet
-chick.ogg:poussin
-chief.ogg:indien
-child.ogg:enfant
-chimney.ogg:cheminée
-chimp.ogg:chimpanzé
-chin.ogg:menton
-chocolate.ogg:chocolat
+cheek.ogg:la joue
+cheer.ogg:encourager
+cheese.ogg:du fromage
+chef.ogg:une cuisinière
+cherry.ogg:une cerise
+chest.ogg:un coffre
+chick.ogg:un poussin
+chicken.ogg:un poulet
+chief.ogg:un indien
+child.ogg:un enfant
+chimney.ogg:une cheminée
+chimp.ogg:un chimpanzé
+chin.ogg:le menton
+chocolate.ogg:du chocolat
 chop.ogg:découper
+chores.ogg:des tâches ménagères
 christmas.ogg:noël
-cigar.ogg:cigare
-circus.ogg:cirque
-city.ogg:ville
-clam.ogg:palourde
-class.ogg:classe
-claw.ogg:griffe
-clay.ogg:argile
-cleaning_lady.ogg:femme de ménage
-clean.ogg:nettoyer
-cliff.ogg:falaise
-clothes_hanger.ogg:cintre
-cloth.ogg:tissus
-cloud.ogg:nuage
+cigar.ogg:un cigare
+circus.ogg:un cirque
+city.ogg:une ville
+clam.ogg:une palourde
+clap.ogg:une tape
+class.ogg:une classe
+claw.ogg:une griffe
+clay.ogg:de l'argile
+clean.ogg:se laver
+cleaning_lady.ogg:une femme de ménage
+cliff.ogg:une falaise
+climb.ogg:escalader
+clock.ogg:un réveil
+cloth.ogg:du tissus
+clothes_hanger.ogg:un cintre
+cloud.ogg:un nuage
 cloudy.ogg:nuageux
-clover.ogg:trèfle
-clown.ogg:clown
-coach.ogg:coach
-coast.ogg:côte
-coat.ogg:manteau
-cobra.ogg:cobra
-coconut.ogg:noix de coco
-cod.ogg:morue
-coffee.ogg:café
-coin.ogg:pièce
-cold.ogg:froid
-color.ogg:couleur
-colt.ogg:poulain
-comb.ogg:peigne
-cone.ogg:cône
-cookie.ogg:biscuit
-cork.ogg:bouchon
-corn.ogg:maïs
-couch.ogg:canapé
+clover.ogg:un trèfle
+cowboy.ogg:un cow-boy
+clown.ogg:un clown
+coach.ogg:une entraîneuse
+coast.ogg:une côte
+coat.ogg:un manteau
+cobra.ogg:un cobra
+coconut.ogg:une noix de coco
+cod.ogg:une morue
+coffee.ogg:un café
+coin.ogg:une pièce
+cold.ogg:le froid
+color.ogg:la couleur
+colt.ogg:un poulain
+comb.ogg:un peigne
+cone.ogg:un cône
+cookie.ogg:un biscuit
+cork.ogg:un bouchon
+corn.ogg:du maïs
+couch.ogg:un canapé
 cough.ogg:tousser
-couple.ogg:couple
-cow.ogg:vache
-crab.ogg:crabe
-cradle.ogg:berceau
-craft.ogg:bricolage
+couple.ogg:un couple
+cow.ogg:une vache
+crab.ogg:un crabe
+cradle.ogg:un berceau
+craft.ogg:des travaux manuels
 crawl.ogg:ramper
-crazy.ogg:fou
-creek.ogg:ruisseau
-crepe.ogg:crêpe
-criminal.ogg:criminel
+crazy.ogg:un fou
+creek.ogg:un ruisseau
+crepe.ogg:une crêpe
+crib.ogg:des berceaux
+criminal.ogg:un criminel
 croak.ogg:coasser
-crocodile.ogg:crocodile
-cross.ogg:croix
-crown.ogg:couronne
-crow.ogg:corbeau
-crumb.ogg:miette
-crust.ogg:croûte
+crocodile.ogg:un crocodile
+cross.ogg:une croix
+crow.ogg:un corbeau
+crown.ogg:une couronne
+crumb.ogg:une miette
+crust.ogg:une croûte
 cry.ogg:pleurer
-cube.ogg:cube
-cucumber.ogg:concombre
-curtain.ogg:rideau
-cute.ogg:mignon
+crystal.ogg:un cristal
+cube.ogg:un cube
+cucumber.ogg:un concombre
+curtain.ogg:un rideau
 cut.ogg:couper
-dad.ogg:papa
-daffodil.ogg:jonquille
-daisy.ogg:marguerite
-dam.ogg:barrage
-dandelion.ogg:pissenlit
-danger.ogg:danger
-dark.ogg:sombre
-dart_board.ogg:cible
-date_fruit.ogg:datte
-deer.ogg:cerf
-den.ogg:tanière
-desert.ogg:désert
-desk.ogg:bureau
-dessert.ogg:dessert
-diamond.ogg:diamant
+cute.ogg:adorable
+dad.ogg:un papa
+daffodil.ogg:une jonquille
+daisy.ogg:une marguerite
+dam.ogg:un barrage
+dance.ogg:dancer
+dandelion.ogg:un pissenlit
+danger.ogg:un danger
+#dark.ogg:NA
+dart_board.ogg:une cible
+date_fruit.ogg:une datte
+deer.ogg:un cerf
+den.ogg:une tanière
+desert.ogg:un désert
+desk.ogg:un bureau
+dessert.ogg:un dessert
+diamond.ogg:un diamant
 dig.ogg:creuser
-dirt.ogg:terre
+dirt.ogg:le sol
 dirty.ogg:sale
-dishcloth.ogg:torchon
-dish.ogg:plat
+dish.ogg:un plat
+dishcloth.ogg:un torchon
 dive.ogg:plonger
-doctor.ogg:médecin
-doe.ogg:biche
-dog.ogg:chien
-doll.ogg:poupée
-dolphin.ogg:dauphin
-domino.ogg:domino
-doormat.ogg:paillasson
-door.ogg:porte
-dot.ogg:point
-doughnut.ogg:beignet
-dove.ogg:colombe
-dragonfly.ogg:libellule
-dragon.ogg:dragon
-drawer.ogg:tiroir
-dress.ogg:robe
+doctor.ogg:une docteure
+doe.ogg:une biche
+dog.ogg:un chien
+doll.ogg:une poupée
+dolphin.ogg:un dauphin
+domino.ogg:un domino
+door.ogg:une porte
+doormat.ogg:un paillasson
+dot.ogg:un point
+doughnut.ogg:un beignet
+dove.ogg:une colombe
+dragon.ogg:un dragon
+dragonfly.ogg:une libellule
+#drank.ogg:NA
+draw.ogg:un dessin
+drawer.ogg:un tiroir
+dream.ogg:un rêve
+dress.ogg:une robe
+drink.ogg:une boisson
 drinking.ogg:boire
-drink.ogg:boisson
-drip.ogg:goutte
+drip.ogg:une goutte
 drive.ogg:conduire
 drool.ogg:baver
-drum.ogg:tambour
+drum.ogg:un tambour
 dry.ogg:sécher
-duck_mother.ogg:canne
-duck.ogg:canard
-dune.ogg:dune
-dwarf.ogg:nain
-eagle.ogg:aigle
-ear.ogg:oreille
-earth.ogg:Terre
+duck.ogg:un canard
+duck_mother.ogg:une canne
+dune.ogg:une dune
+dwarf.ogg:un nain
+eagle.ogg:un aigle
+ear.ogg:une oreille
+earth.ogg:la Terre
 eat.ogg:manger
-egg.ogg:oeuf
-eggplant.ogg:aubergine
-elbow.ogg:coude
-electrician.ogg:électricien
+egg.ogg:un oeuf
+eggplant.ogg:une aubergine
+elbow.ogg:le coude
+electrician.ogg:un électricien
 eleven.ogg:onze
-elk.ogg:wapiti
+elk.ogg:un wapiti
 empty.ogg:vide
-engineer.ogg:ingénieur
-engine.ogg:moteur
-eraser.ogg:gomme
-eyelash.ogg:cil
-eyes.ogg:yeux
-fairy.ogg:fée
+engine.ogg:un moteur
+engineer.ogg:un ingénieur
+eraser.ogg:une gomme
+explore.ogg:des explorateurs
+eyelash.ogg:un cil
+eyes.ogg:les yeux
+face.ogg:un visage
+fair.ogg:un manège
+fairy.ogg:une fée
 fall_down.ogg:tomber
-fall_season.ogg:automne
-family.ogg:famille
-farmer.ogg:fermier
-farm.ogg:ferme
+fall_season.ogg:l'automne
+family.ogg:une famille
+fan.ogg:un ventilateur
+farm.ogg:une ferme
+farmer.ogg:un fermier
 fat.ogg:gras
-faucet.ogg:robinet
-fawn.ogg:faon
-feast.ogg:poulet
-feather.ogg:plume
+faucet.ogg:un robinet
+fawn.ogg:un faon
+feast.ogg:un poulet
+feather.ogg:une plume
 feed.ogg:nourrir
-femur.ogg:fémur
+feet.ogg:un pied
+#fell.ogg:NA
+femur.ogg:un fémur
 fetch.ogg:rapporter
-fig.ogg:figue
+fig.ogg:une figue
+fin.ogg:une nageoire
 find.ogg:trouver
-finger.ogg:doigt
-fin.ogg:nageoire
-fire_extinguisher.ogg:extincteur
-fireman.ogg:pompier
-fire.ogg:feu
-fisherman.ogg:pêcheur
-fish.ogg:poisson
-fist.ogg:poing
-flacon.ogg:flacon
-flag.ogg:drapeau
-flame.ogg:flamme
-flamingo.ogg:flamant rose
-flat.ogg:plat
-flies.ogg:mouche
-flight.ogg:voler
+finger.ogg:un doigt
+fire.ogg:un feu
+fire_extinguisher.ogg:un extincteur
+fireman.ogg:un pompier
+fish.ogg:un poisson
+fisherman.ogg:un pêcheur
+fist.ogg:un poing
+flacon.ogg:un flacon
+flag.ogg:un drapeau
+flame.ogg:une flamme
+flamingo.ogg:un flamant rose
+flash.ogg:une lampe torche
+flat.ogg:un appartement
+flies.ogg:une mouche
+flight.ogg:un vol
 float.ogg:flotter
-flour.ogg:farine
-flower.ogg:fleur
-flute.ogg:flûte
-foam.ogg:mousse
-food.ogg:nourriture
-foot.ogg:pied
-forest.ogg:forêt
-fork.ogg:fourchette
-fountain.ogg:fontaine
-fox.ogg:renard
+flour.ogg:la farine
+flower.ogg:une fleur
+fluff.ogg:une peluche
+flute.ogg:une flûte
+fly.ogg:voler
+foam.ogg:la mousse
+food.ogg:un hamburger
+foot.ogg:un pied
+forest.ogg:une forêt
+fork.ogg:une fourchette
+fountain.ogg:une fontaine
+fox.ogg:un renard
 freeze.ogg:geler
-friend.ogg:ami
-fries.ogg:frites
-frog.ogg:grenouille
+friend.ogg:des amis
+fries.ogg:une frite
+frog.ogg:une grenouille
 front.ogg:devant
-frown.ogg:froncer
-fruit.ogg:fruit
+frown.ogg:rechigner
+fruit.ogg:un fruit
+fudge.ogg:un caramel
 full.ogg:plein
-fun.ogg:amusement
-fur.ogg:fourrure
-game.ogg:jeu
-garage.ogg:garage
-garden.ogg:jardin
-garlic.ogg:ail
-giant.ogg:géant
-gift.ogg:cadeau
-giraffe.ogg:girafe
-girl.ogg:fille
-glasses.ogg:lunettes
-glass.ogg:verre
-glove.ogg:gant
-glue.ogg:colle
-gnome.ogg:gnome
-goat.ogg:chèvre
+fun.ogg:un jeu
+fur.ogg:la fourrure
+game.ogg:un jeu
+garage.ogg:un garage
+garden.ogg:un jardin
+garlic.ogg:de l'ail
+#gem.ogg:NA
+giant.ogg:un géant
+gift.ogg:un cadeau
+giraffe.ogg:une girafe
+girl.ogg:une fille
+glass.ogg:un verre
+glasses.ogg:des lunettes
+glove.ogg:un gant
+glue.ogg:la colle
+gnome.ogg:un gnome
+goat.ogg:une chèvre
 golden.ogg:doré
-golf.ogg:golf
-goose.ogg:oie
-gorilla.ogg:gorille
-grain.ogg:grain
-grandmother.ogg:grand-mère
-grapefruit.ogg:pamplemousse
-grape.ogg:raisin
-grass.ogg:herbe
-grave.ogg:tombe
+golf.ogg:le golf
+goose.ogg:une oie
+gorilla.ogg:un gorille
+grain.ogg:un épi
+grandmother.ogg:une grand-mère
+grape.ogg:une grappe de raisin
+grapefruit.ogg:un pamplemousse
+grass.ogg:une herbe
+grave.ogg:une tombe
 gray.ogg:gris
 green.ogg:vert
-grill.ogg:barbecue
-grin.ogg:sourire
-ground.ogg:sol
+grill.ogg:un barbecue
+grin.ogg:un sourire
+ground.ogg:la terre
 growl.ogg:grogner
 guignol.ogg:guignol
-guinea_pig.ogg:cochon d'inde
-hair_dryer.ogg:sèche-cheveux
-hair.ogg:cheveux
-half.ogg:moitié
-hammer.ogg:marteau
-ham.ogg:jambon
-handlebar.ogg:guidon
-hand.ogg:main
+guinea_pig.ogg:un cochon d'inde
+gum.ogg:du chewing-gum
+hair.ogg:les cheveux
+hair_dryer.ogg:un sèche-cheveux
+half.ogg:la moitié
+ham.ogg:un jambon
+hammer.ogg:un marteau
+hand.ogg:une main
+handlebar.ogg:un guidon
 happy.ogg:heureux
-harp.ogg:harpe
-hat.ogg:chapeau
-hay.ogg:foin
-head.ogg:tête
+harp.ogg:une harpe
+hat.ogg:un chapeau
+hatch.ogg:éclore
+hay.ogg:le foin
+head.ogg:la tête
 hear.ogg:entendre
-heat.ogg:chaleur
-heel.ogg:talon
-helmet.ogg:casque
-hen.ogg:poule
-herd.ogg:troupeau
+heat.ogg:la chaleur
+hedge.ogg:une bordure
+hedgehog.ogg:un hérisson
+heel.ogg:le talon
+helmet.ogg:un casque
+hen.ogg:une poule
+herd.ogg:un troupeau
 high.ogg:haut
-hike.ogg:promenade
-hill.ogg:colline
-hip.ogg:hanche
-hippopotamus.ogg:hippopotame
-hive.ogg:ruche
-hockey.ogg:hockey
-hole.ogg:trou
-horse.ogg:cheval
-hose.ogg:tuyau
-hospital.ogg:hôpital
-hot_dog.ogg:hot-dog
+hike.ogg:une promenade
+hill.ogg:une colline
+hip.ogg:une hanche
+hippopotamus.ogg:un hippopotame
+hit.ogg:une bagarre
+hive.ogg:une ruche
+hockey.ogg:le hockey
+hole.ogg:un trou
+#home.ogg:NA
+hook.ogg:un hameçon
+hop.ogg:rebondir
+horse.ogg:un cheval
+hose.ogg:un tuyau
+hospital.ogg:un hôpital
 hot.ogg:chaud
-house.ogg:maison
+hot_dog.ogg:un hot-dog
+#hound.ogg:NA
+house.ogg:une maison
+howl.ogg:un hurlement
 huge.ogg:énorme
-hummingbird.ogg:colibri
-hunchback.ogg:bossu
-hunter.ogg:chasseur
-husband.ogg:mari
-hyena.ogg:hyène
-iceberg.ogg:iceberg
-ice.ogg:glace
-iguana.ogg:iguane
+hummingbird.ogg:un colibri
+hunchback.ogg:un bossu
+hunter.ogg:un chasseur
+husband.ogg:un mari
+hut.ogg:une hutte
+hyena.ogg:une hyène
+ice.ogg:un glaçon
+iceberg.ogg:un iceberg
+iguana.ogg:un iguane
 ill.ogg:malade
-ink.ogg:encre
-island.ogg:île
-jacket.ogg:veste
-jaguar.ogg:jaguar
-jam.ogg:confiture
-jay.ogg:geai
-jellyfish.ogg:méduse
-jelly.ogg:gelée
-jewel.ogg:bijou
-jockey.ogg:jockey
-judge.ogg:juge
-judo.ogg:judo
-juggler.ogg:jongleur
-juice.ogg:jus
+ink.ogg:une encre
+island.ogg:une île
+jacket.ogg:une veste
+jaguar.ogg:un jaguar
+jam.ogg:une confiture
+jay.ogg:un geai
+jelly.ogg:une gelée
+jellyfish.ogg:une méduse
+jewel.ogg:un bijou
+job.ogg:un travail
+jockey.ogg:un jockey
+jog.ogg:un joggeur
+judge.ogg:un juge
+judo.ogg:une judokate
+juggler.ogg:une jongleuse
+juice.ogg:un jus
 jump.ogg:sauter
-kangaroo.ogg:kangourou
-keel.ogg:quille
-kernel.ogg:noyau
-keyboard.ogg:clavier
-kimono.ogg:kimono
-king.ogg:roi
-kitchen.ogg:cuisine
-kite.ogg:cerf-volant
-kitten.ogg:chaton
-kiwi.ogg:kiwi
+kangaroo.ogg:un kangourou
+keel.ogg:une quille
+kernel.ogg:un noyau
+keyboard.ogg:un clavier
+kimono.ogg:un kimono
+king.ogg:un roi
+kiss.ogg:un baiser
+kitchen.ogg:une cuisine
+kite.ogg:un cerf-volant
+kitten.ogg:un chaton
+kiwi.ogg:un kiwi
+knee.ogg:un genou
 kneel.ogg:s'agenouiller
-knee.ogg:genou
-knife.ogg:couteau
-knight.ogg:chevalier
-knot.ogg:nœud
-koala.ogg:koala
-ladybug.ogg:coccinelle
-lady.ogg:dame
-lake.ogg:lac
-lama.ogg:lama
-lamp.ogg:lampe
-lasso.ogg:lasso
+knife.ogg:un couteau
+knight.ogg:un chevalier
+knit.ogg:tricoter
+knot.ogg:un noeud
+koala.ogg:un koala
+lady.ogg:une dame
+ladybug.ogg:une coccinelle
+lake.ogg:un lac
+lama.ogg:un lama
+lamb.ogg:un agneau
+lamp.ogg:une lampe
+#lane.ogg:NA
+#lap.ogg:NA
+land.ogg:un terrain
+lasso.ogg:un lasso
 laugh.ogg:rire
-lava.ogg:lave
-lawn.ogg:pelouse
-lawyer.ogg:avocat
-leaf.ogg:feuille
-ledge.ogg:rebord
-leek.ogg:poireau
-left.ogg:gauche
-leg_animal.ogg:patte
-leg.ogg:jambe
-lemonade.ogg:limonade
-lemon.ogg:citron
-lemur.ogg:maki
-leopard.ogg:léopard
-lettuce.ogg:laitue
-librarian.ogg:bibliothécaire
+lava.ogg:la lave
+lawn.ogg:la pelouse
+lawyer.ogg:un avocat
+leaf.ogg:une feuille
+ledge.ogg:un rebord
+leek.ogg:un poireau
+left.ogg:la gauche
+leg.ogg:la jambe
+leg_animal.ogg:la patte
+lemon.ogg:un citron
+lemonade.ogg:une limonade
+lemur.ogg:un lémur
+leopard.ogg:un léopard
+lettuce.ogg:une laitue
+librarian.ogg:une bibliothécaire
 lick.ogg:lécher
-lid.ogg:couvercle
-lift.ogg:poids
-lighthouse.ogg:phare
-lightning.ogg:foudre
-light.ogg:lumière
-lilac.ogg:lilas
-lime.ogg:citron vert
-line.ogg:ligne
-link.ogg:lien
-lion_cub.ogg:lionceau
-lion.ogg:lion
-lip.ogg:lèvre
-liquid.ogg:liquide
-lizard.ogg:lézard
-lobster.ogg:homard
+lid.ogg:un couvercle
+lift.ogg:soulever
+light.ogg:la lumière
+lilac.ogg:un lilas
+lighthouse.ogg:un phare
+lightning.ogg:la foudre
+lilac.ogg:un lilas
+lime.ogg:un citron vert
+line.ogg:un code-barres
+link.ogg:un chaînon
+lion.ogg:un lion
+lion_cub.ogg:un lionceau
+lip.ogg:une lèvre
+liquid.ogg:un liquide
+lizard.ogg:un lézard
+lobster.ogg:un homard
+log.ogg:une bûche
 look.ogg:regarder
-lunch.ogg:casse-croûte
-mad.ogg:fou
-magnet.ogg:aimant
-magnifying_glass.ogg:loupe
-magpie.ogg:pie
-mane.ogg:crinière
-mango.ogg:mangue
-man.ogg:homme
-maple.ogg:érable
-map.ogg:carte
-mashed_potatoes.ogg:purée
-mask.ogg:masque
-mast.ogg:mât
-mat.ogg:natte
-mattress.ogg:matelas
+lunch.ogg:un casse-croûte
+mad.ogg:la colère
+magic.ogg:un magicien
+magnet.ogg:un aimant
+magnifying_glass.ogg:une loupe
+magpie.ogg:une pie
+mail.ogg:une enveloppe
+man.ogg:un homme
+mane.ogg:une crinière
+mango.ogg:une mangue
+map.ogg:une carte
+maple.ogg:un érable
+marble.ogg:une bille
+mashed_potatoes.ogg:une purée
+mask.ogg:un masque
+mast.ogg:un mât
+mat.ogg:une natte
+match.ogg:une allumette
+#mate.ogg:NA
+mate_male.ogg:un copain
+mate_female.ogg:une camarade
+mattress.ogg:un matelas
 mauve.ogg:violet
-meal.ogg:repas
-meat.ogg:viande
-mechanic.ogg:mécanicien
-medal.ogg:médaille
+meal.ogg:un repas
+meat.ogg:de la viande
+mechanic.ogg:un mécanicien
+medal.ogg:une médaille
 meet.ogg:rencontrer
-melon.ogg:melon
-men.ogg:gens
-merry-go-round.ogg:manège
-microphone.ogg:micro
-milk.ogg:lait
-mill.ogg:moulin
-mimosa.ogg:mimosa
-mirror.ogg:miroir
-mixer.ogg:mixer
-mole.ogg:taupe
-mom.ogg:maman
-moon.ogg:lune
-moose.ogg:élan
-mosque.ogg:mosquée
-mosquito.ogg:moustique
-mother.ogg:mère
-motorcycle.ogg:moto
-mountain.ogg:montagne
-mouse.ogg:souris
-mouth.ogg:bouche
-movie.ogg:film
-mower.ogg:tondeuse
-mud.ogg:boue
-mug.ogg:tasse
-mule.ogg:mule
-muscle.ogg:muscle
-mushroom.ogg:champignon
-musician.ogg:musicien
-music.ogg:musique
+melon.ogg:un melon
+men.ogg:une foule
+merry-go-round.ogg:un tourniquet
+#mice.ogg:NA
+microphone.ogg:un micro
+milk.ogg:du lait
+mill.ogg:un moulin
+mimosa.ogg:un mimosa
+mirror.ogg:un miroir
+mixer.ogg:un mixer
+mole.ogg:une taupe
+mom.ogg:une maman
+moon.ogg:une lune
+moose.ogg:un élan
+mop.ogg:un balai
+mosque.ogg:une mosquée
+mosquito.ogg:un moustique
+mother.ogg:une mère
+motorcycle.ogg:une moto
+mountain.ogg:une montagne
+mouse.ogg:une souris
+mouth.ogg:une bouche
+movie.ogg:un film
+mower.ogg:une tondeuse
+mud.ogg:la boue
+mug.ogg:une tasse
+mule.ogg:une mule
+muscle.ogg:un muscle
+mushroom.ogg:un champignon
+music.ogg:la musique
+musician.ogg:un musicien
 naked.ogg:nu
-navel.ogg:nombril
-necklace.ogg:collier
-neck.ogg:cou
-needle.ogg:aiguille
-nest.ogg:nid
-newspaper.ogg:journal
-nightgown.ogg:chemise de nuit
-night.ogg:nuit
-nose.ogg:nez
-nostril.ogg:narine
-notebook.ogg:cahier
-number.ogg:nombre
-nun.ogg:religieuse
-nurse_male.ogg:infirmier
-nurse.ogg:infirmière
-oar.ogg:rame
-ocean.ogg:océan
-office.ogg:bureau
-olive.ogg:olive
-onion.ogg:oignon
+nap.ogg:une sieste
+navel.ogg:le nombril
+neck.ogg:le cou
+necklace.ogg:un collier
+needle.ogg:une aiguille
+nest.ogg:un nid
+net.ogg:un filet
+newspaper.ogg:un journal
+night.ogg:la nuit
+nightgown.ogg:une chemise de nuit
+nose.ogg:le nez
+nostril.ogg:la narine
+notebook.ogg:un cahier
+number.ogg:un nombre
+nun.ogg:une religieuse
+nurse.ogg:une infirmière
+nurse_male.ogg:un infirmier
+nut.ogg:une cacahuète
+oar.ogg:une rame
+ocean.ogg:un océan
+office.ogg:un bureau
+olive.ogg:une olive
 on.ogg:sur
+onion.ogg:un oignon
 open.ogg:ouvert
-opossum.ogg:opossum
+opossum.ogg:un opossum
 orange-color.ogg:orange
-orange.ogg:orange
-orchid.ogg:orchidée
-ostrich.ogg:autruche
-otter.ogg:loutre
-owl.ogg:hibou
-oyster.ogg:huître
-pacifier.ogg:tétine
-page.ogg:page
-pair.ogg:paire
-pajamas.ogg:pyjama
-palm_tree.ogg:palmier
-pal.ogg:copain
-panda.ogg:panda
-pan.ogg:poêle
-panther.ogg:panthère
-panties.ogg:culotte
-pants.ogg:pantalon
-papaya.ogg:papaye
-paper.ogg:papier
-parachute.ogg:parachute
-parakeet.ogg:perruche
-parrot.ogg:perroquet
-patch.ogg:pièce
-path.ogg:chemin
-paw.ogg:patte
-peach.ogg:pêche
-peacock.ogg:paon
-peak.ogg:pic
-pea.ogg:pois
-pearl.ogg:perle
-pear.ogg:poire
+orange.ogg:une orange
+orchid.ogg:une orchidée
+ostrich.ogg:une autruche
+otter.ogg:une loutre
+owl.ogg:un hibou
+ox.ogg:un boeuf
+oyster.ogg:une huître
+pacifier.ogg:une tétine
+page.ogg:une page
+pair.ogg:une paire
+pajamas.ogg:un pyjama
+#pal.ogg:NA
+palm_tree.ogg:un palmier
+pan.ogg:une poêle
+panda.ogg:un panda
+panther.ogg:une panthère
+panties.ogg:une culotte
+pants.ogg:un pantalon
+papaya.ogg:une papaye
+paper.ogg:un papier
+parachute.ogg:un parachute
+parakeet.ogg:une perruche
+parrot.ogg:un perroquet
+patch.ogg:une pièce
+path.ogg:un chemin
+paw.ogg:une patte
+pea.ogg:un petit pois
+peach.ogg:une pêche
+peacock.ogg:un paon
+peak.ogg:un pic
+pear.ogg:une poire
+pearl.ogg:une perle
 peck.ogg:picorer
-pedal.ogg:pédale
-pelican.ogg:pélican
-pencil.ogg:crayon
-pen.ogg:stylo
-peony.ogg:pivoine
-people.ogg:gens
-pepper.ogg:poivre
-peppers.ogg:poivron
-petal.ogg:pétale
-petite.ogg:petite
-phone.ogg:téléphone
-piano.ogg:piano
-picture.ogg:image
-pie.ogg:tarte
-pigeon.ogg:pigeon
-pig.ogg:cochon
-pill.ogg:pilules
-pillow.ogg:oreiller
-pilot.ogg:pilote
-pine_cone.ogg:pomme de pin
-pine.ogg:pin
+pedal.ogg:une pédale
+pelican.ogg:un pélican
+pen.ogg:un stylo
+pencil.ogg:un crayon
+peony.ogg:une pivoine
+people.ogg:les gens
+pepper.ogg:le poivre
+peppers.ogg:un poivron
+petal.ogg:un pétale
+petite.ogg:la petite
+phone.ogg:un téléphone
+piano.ogg:un piano
+picture.ogg:une photo
+pie.ogg:une tarte
+pig.ogg:un cochon
+pigeon.ogg:un pigeon
+pill.ogg:une pilule
+pillow.ogg:un oreiller
+pilot.ogg:un pilote
+pine.ogg:un pin
+pine_cone.ogg:une pomme de pin
 pink.ogg:rose
-pip.ogg:pépin
-piranha.ogg:piranha
-pirate.ogg:pirate
-pizza.ogg:pizza
-plane.ogg:avion
-planet.ogg:planète
+pip.ogg:un pépin
+pipe.ogg:une pipe
+piranha.ogg:un piranha
+pirate.ogg:un pirate
+pizza.ogg:une pizza
+plane.ogg:un avion
+planet.ogg:une planète
+plant.ogg:une plante
+plate.ogg:une assiette
 play.ogg:jouer
-pliers.ogg:pince
-plumber.ogg:plombier
-plum.ogg:prune
-pocket.ogg:poche
-pod.ogg:cosse
-pompon.ogg:pompon
-pond.ogg:étang
-pony.ogg:poney
-pool.ogg:piscine
-pope.ogg:pape
-pop.ogg:pop-corn
-porthole.ogg:hublot
-potato.ogg:pomme de terre
-pot.ogg:pot
+pliers.ogg:une pince
+plum.ogg:une prune
+plow.ogg:labourer
+plumber.ogg:un plombier
+pocket.ogg:une poche
+pod.ogg:une cosse
+pole.ogg:un poteau
+police.ogg:un policier
+pompon.ogg:un pompon
+pond.ogg:un étang
+pony.ogg:un poney
+pool.ogg:une piscine
+pop.ogg:du pop-corn
+pope.ogg:le pape
+porthole.ogg:un hublot
+post.ogg:une boîte aux lettres
+pot.ogg:un pot
+potato.ogg:une pomme de terre
 pounce.ogg:bondir
-president.ogg:président
+president.ogg:le président
 pretty.ogg:jolie
-price.ogg:prix
-priest.ogg:prêtre
-prince.ogg:prince
-princess.ogg:princesse
-prisoner.ogg:prisonnier
-prison.ogg:prison
+price.ogg:le prix
+priest.ogg:un prêtre
+prince.ogg:un prince
+princess.ogg:une princesse
+prison.ogg:une prison
+prisoner.ogg:un prisonnier
+prize.ogg:un trophée
+pug.ogg:un bouledogue
 pull.ogg:tirer
-pullover.ogg:pull-over
-pumpkin.ogg:citrouille
-puppy.ogg:chiot
-pyramid.ogg:pyramide
+pullover.ogg:un pull-over
+pumpkin.ogg:une citrouille
+puppy.ogg:un chiot
+pyramid.ogg:une pyramide
 quarrel.ogg:se quereller
-queen.ogg:reine
-question.ogg:question
-rabbit_baby.ogg:lapereau
-rabbit.ogg:lapin
-race.ogg:course
-radio.ogg:radio
-radish.ogg:radis
-raft.ogg:radeau
-rage.ogg:rage
-rag.ogg:chiffon
-raincoat.ogg:imperméable
-rain.ogg:pluie
-rake.ogg:râteau
-ramp.ogg:rampe
-raspberry.ogg:framboise
-rat.ogg:rat
-razor.ogg:rasoir
+queen.ogg:une reine
+question.ogg:une question
+quilt.ogg:une couette
+quiz.ogg:un quiz
+rabbit.ogg:un lapin
+rabbit_baby.ogg:un lapereau
+race.ogg:une course
+radio.ogg:une radio
+radish.ogg:un radis
+raft.ogg:un radeau
+rag.ogg:un chiffon
+rage.ogg:la rage
+rain.ogg:la pluie
+raincoat.ogg:un imperméable
+rake.ogg:un râteau
+ramp.ogg:une rampe
+#ran.ogg:NA
+raspberry.ogg:une framboise
+rat.ogg:un rat
+razor.ogg:un rasoir
 read.ogg:lire
 red.ogg:rouge
-reptile.ogg:reptile
-rhinoceros.ogg:rhinocéros
-rice.ogg:riz
-rifle.ogg:fusil
-right.ogg:droite
-rip.ogg:déchirer
+reptile.ogg:un reptile
+rhinoceros.ogg:un rhinocéros
+rice.ogg:le riz
+#ride.ogg:NA
+rifle.ogg:un fusil
+right.ogg:la droite
+#rip.ogg:NA
 rise.ogg:augmenter
-river.ogg:rivière
-road.ogg:route
-roast.ogg:rôti
-robot.ogg:robot
-rocket.ogg:fusée
-rock.ogg:rocher
-rolling_pin.ogg:rouleau
-roof.ogg:toit
-room.ogg:pièce
-root.ogg:racine
-rope.ogg:corde
-rose.ogg:rose
-round.ogg:rond
-rowing.ogg:aviron
+river.ogg:une rivière
+road.ogg:une route
+roast.ogg:un rôti
+#robe.ogg:NA
+robot.ogg:un robot
+rock.ogg:un caillou
+rocket.ogg:une fusée
+rolling_pin.ogg:un rouleau
+roof.ogg:un toit
+room.ogg:une pièce
+root.ogg:une racine
+rope.ogg:une corde
+rose.ogg:une rose
+round.ogg:un rond
+rowing.ogg:un aviron
 royal.ogg:royal
-rug.ogg:tapis
+rug.ogg:un tapis
 run.ogg:courir
-saddle.ogg:selle
 sad.ogg:triste
-sailor.ogg:marin
-salamander.ogg:salamandre
-salmon.ogg:saumon
-sand.ogg:sable
-sandwich.ogg:sandwich
-sash.ogg:ceinture
+saddle.ogg:une selle
+sail.ogg:un voilier
+sailor.ogg:un marin
+salamander.ogg:une salamandre
+salmon.ogg:un saumon
+sand.ogg:le sable
+sandals.ogg:une sandale
+sandwich.ogg:un sandwich
+sash.ogg:une ceinture
 sat.ogg:s'asseoir
-sauce.ogg:sauce
-sausage.ogg:saucisse
-scale.ogg:balance
-scar.ogg:cicatrice
-school_bag.ogg:sac
-school.ogg:école
-science.ogg:science
-scissors.ogg:ciseaux
-scorpion.ogg:scorpion
-scratch.ogg:gratter
+sauce.ogg:une sauce
+sausage.ogg:une saucisse
+scale.ogg:une balance
+scar.ogg:une cicatrice
+scared.ogg:effrayé
+scarf.ogg:une écharpe
+school.ogg:une école
+school_bag.ogg:un sac
+science.ogg:la science
+scissors.ogg:un ciseau
+scorpion.ogg:un scorpion
+scratch.ogg:griffer
 scream.ogg:crier
-screwdriver.ogg:tournevis
-screw.ogg:vis
-scribble.ogg:griffonner
-sea.ogg:mer
-seat.ogg:siège
-seed.ogg:semence
+screw.ogg:une vis
+screwdriver.ogg:un tournevis
+scribble.ogg:gribouiller
+sea.ogg:la mer
+seat.ogg:un siège
 see.ogg:voir
-shadow.ogg:ombre
+seed.ogg:une graine
+shadow.ogg:une ombre
 shake.ogg:secouer
-shark.ogg:requin
+shark.ogg:un requin
 shave.ogg:se raser
-shed.ogg:hangar
-sheep.ogg:mouton
-shelf.ogg:étagère
-ship.ogg:navire
-shirt.ogg:chemise
-shoelace.ogg:lacet
-shoe.ogg:chaussure
-shop.ogg:magasin
-shore.ogg:rivage
-shovel.ogg:pelle
-shower.ogg:douche
-shrimp.ogg:crevette
-shrub.ogg:arbuste
+shed.ogg:un hangar
+sheep.ogg:un mouton
+shelf.ogg:une étagère
+shell.ogg:un coquillage
+ship.ogg:un bateau
+shirt.ogg:une chemise
+shoe.ogg:une chaussure
+shoelace.ogg:un lacet
+shop.ogg:un magasin
+shore.ogg:un rivage
+short.ogg:un short
+shovel.ogg:une pelle
+shower.ogg:une douche
+shrimp.ogg:une crevette
+shrub.ogg:un arbuste
 shut.ogg:fermé
-shutter.ogg:volet
+shutter.ogg:un volet
 sick.ogg:malade
-sidewalk.ogg:trottoir
+sidewalk.ogg:un trottoir
+sign.ogg:un panneau
 sing.ogg:chanter
-sink.ogg:évier
+sink.ogg:un évier
 sip.ogg:siroter
-sister.ogg:sœur
+sister.ogg:une soeur
+sit.ogg:s'asseoir
 sixteen.ogg:seize
-skate.ogg:skate
-skeleton.ogg:squelette
-skimmer.ogg:écumoire
-skin.ogg:peau
-ski.ogg:ski
-skirt.ogg:jupe
-skunk.ogg:mouffette
-sky.ogg:ciel
-sled.ogg:traîneau
+skate.ogg:un skate
+skeleton.ogg:un squelette
+ski.ogg:le ski
+skimmer.ogg:une écumoire
+skin.ogg:la peau
+skirt.ogg:une jupe
+skunk.ogg:une mouffette
+sky.ogg:le ciel
+slam.ogg:smasher
+sled.ogg:une luge
 sleep.ogg:dormir
-sleeve.ogg:manche
-sleigh.ogg:traîneau
+sleeve.ogg:une manche
+sleigh.ogg:un traîneau
+slide.ogg:un toboggan
 slim.ogg:mince
-slippers.ogg:chaussons
-slope.ogg:pente
+slime.ogg:la bave
+slippers.ogg:un chausson
+slope.ogg:une pente
 sloppy.ogg:trempé
-sloth.ogg:paresseux
-slot.ogg:fente
-slug.ogg:limace
-small.ogg:petit
-smile.ogg:sourire
-smock.ogg:blouse
-smoke.ogg:fumée
-smooch.ogg:se bécoter
-snail.ogg:escargot
-snake.ogg:serpent
-sneaker.ogg:basket
+slot.ogg:une fente
+sloth.ogg:un paresseux
+slug.ogg:une limace
+small.ogg:le petit
+smell.ogg:sentir
+smile.ogg:un sourire
+smock.ogg:une blouse
+smoke.ogg:la fumée
+smooch.ogg:s'embrasser
+#snack.ogg:NA
+snail.ogg:un escargot
+snake.ogg:un serpent
+sneaker.ogg:une basket
 sniff.ogg:renifler
-snow.ogg:neige
-soap.ogg:savon
+snow.ogg:la neige
+soap.ogg:le savon
 sob.ogg:sangloter
-sock.ogg:chaussette
-soldier.ogg:soldat
-sole.ogg:sole
-sole_shoe.ogg:semelle
-son.ogg:fils
-soup.ogg:soupe
-spade.ogg:bêche
-spaghetti.ogg:spaghetti
-spark.ogg:étincelle
-sparrow.ogg:moineau
-spatula.ogg:spatule
+sock.ogg:une chaussette
+soldier.ogg:un soldat
+sole.ogg:une sole
+sole_shoe.ogg:une semelle
+son.ogg:un fils
+soup.ogg:une soupe
+spade.ogg:une bêche
+spaghetti.ogg:un spaghetti
+spark.ogg:une étincelle
+sparrow.ogg:un moineau
+spatula.ogg:une spatule
 speak.ogg:parler
-spear.ogg:lance
-spider_web.ogg:toile
-spike.ogg:hérisson
+spear.ogg:une lance
+spice.ogg:un épice
+spider.ogg:une araignée
+spider_web.ogg:une toile d'araignée
+spike.ogg:un hérisson
 spill.ogg:répandre
-spinach.ogg:épinards
-spine.ogg:colonne
-spinning_top.ogg:toupie
-splash.ogg:éclabousser
-sponge.ogg:éponge
-spool.ogg:bobine
-spoon.ogg:cuillère
-sport.ogg:sport
+spinach.ogg:un épinard
+spine.ogg:une colonne vertébrale
+spinning_top.ogg:une toupie
+splash.ogg:un jet
+splatter.ogg:une éclaboussure
+sponge.ogg:une éponge
+spool.ogg:une bobine
+spoon.ogg:une cuillère
+sport.ogg:le sport
+spot.ogg:une tâche
 spray.ogg:pulvériser
 spread.ogg:étaler
 spring.ogg:bondir
-spring_season.ogg:printemps
-square.ogg:carré
-squash.ogg:courge
+spring_season.ogg:le printemps
+#sprinkle.ogg:NA
+square.ogg:un carré
+squash.ogg:une courge
 squat.ogg:s'accroupir
-squid.ogg:calmar
-squirrel.ogg:écureuil
-stack.ogg:pile
-stage.ogg:scène
-staircase.ogg:escalier
-stamp.ogg:timbre
+squid.ogg:un calmar
+squirrel.ogg:un écureuil
+#squirt.ogg:NA
+stack.ogg:une pile
+stage.ogg:une scène
+staircase.ogg:un escalier
+stamp.ogg:un timbre
 stand.ogg:debout
-stare.ogg:regard
-starfish.ogg:étoile
-star.ogg:étoile
-steak.ogg:steak
-steam.ogg:vapeur
-steeple.ogg:clocher
+star.ogg:une étoile
+stare.ogg:un regard
+starfish.ogg:une étoile de mer
+steak.ogg:un steak
+steam.ogg:la vapeur
 steep.ogg:raide
-stem.ogg:tige
-step.ogg:marche
-stew.ogg:ragoût
-stick.ogg:branche
+steeple.ogg:un clocher
+stem.ogg:une tige
+step.ogg:une marche
+stew.ogg:un ragoût
+stick.ogg:une branche
 sting.ogg:piquer
 stinky.ogg:puant
 stitch.ogg:coudre
-stomach.ogg:estomac
-stone.ogg:pierre
+stomach.ogg:un estomac
+stone.ogg:une pierre
 stop.ogg:arrêter
+store.ogg:un magasin
+stove.ogg:une cuisinière
 straight.ogg:droit
-strainer.ogg:passoire
-strawberry.ogg:fraise
-straw.ogg:paille
-stream.ogg:rivière
-street.ogg:rue
+strainer.ogg:une passoire
+straw.ogg:une paille
+strawberry.ogg:une fraise
+stream.ogg:une rivière
+street.ogg:une rue
 stretch.ogg:s'étirer
-string.ogg:fil
-stripe.ogg:bande
+string.ogg:une ficelle
+stripe.ogg:une bande
 strong.ogg:fort
-student.ogg:étudiant
+student.ogg:un étudiant
 study.ogg:étudier
-stump.ogg:souche
-sugar.ogg:sucre
-suitcase.ogg:valise
-suit.ogg:costume
-summer.ogg:été
-sun.ogg:soleil
-swan.ogg:cygne
+stump.ogg:une souche
+sugar.ogg:un sucre
+suit.ogg:un costume
+suitcase.ogg:une valise
+summer.ogg:un été
+summit.ogg:un sommet
+sun.ogg:le soleil
+swan.ogg:un cygne
 sweat.ogg:transpirer
-sweatshirt.ogg:sweat-shirt
-tablecloth.ogg:nappe
-table.ogg:table
-tadpole.ogg:têtard
-tag.ogg:étiquette
-tail.ogg:queue
+sweatshirt.ogg:un sweat-shirt
+swim.ogg:nager
+table.ogg:une table
+tablecloth.ogg:une nappe
+tadpole.ogg:un têtard
+tag.ogg:une étiquette
+tail.ogg:une queue
 tall.ogg:grand
-tape_measure.ogg:mètre
-taxi.ogg:taxi
-teacher.ogg:professeur
+tape_measure.ogg:un mètre
+taxi.ogg:un taxi
 teach.ogg:enseigner
-teddy.ogg:peluche
-teeth.ogg:dents
-television.ogg:télévision
-temple.ogg:temple
-tennis.ogg:tennis
-tent.ogg:tente
-text.ogg:texte
+teacher.ogg:un professeur
+tear.ogg:déchirer
+teddy.ogg:une peluche
+teeth.ogg:les dents
+television.ogg:une télévision
+temple.ogg:un temple
+tennis.ogg:le tennis
+tent.ogg:une tente
+text.ogg:un texte
 thick.ogg:épais
-thief.ogg:voleur
-thigh.ogg:cuisse
-throat.ogg:gorge
-thumb.ogg:pouce
-ticket.ogg:billet
-tiger.ogg:tigre
-time.ogg:temps
-tin.ogg:conserve
+thief.ogg:un voleur
+thigh.ogg:une cuisse
+think.ogg:penser
+thread.ogg:une bobine
+throat.ogg:la gorge
+throw.ogg:envoyer
+thumb.ogg:un pouce
+ticket.ogg:un billet
+tiger.ogg:un tigre
+time.ogg:le temps
+tin.ogg:une conserve
+tire.ogg:un pneu
 tired.ogg:fatigué
-tissue.ogg:mouchoir
-toad.ogg:crapaud
-toaster.ogg:grille-pain
-toe.ogg:orteil
-toilet.ogg:toilette
-tomatoe.ogg:tomate
-tongs.ogg:pinces
-tongue.ogg:langue
-tool.ogg:outil
-top.ogg:sommet
-torch.ogg:torche
-towel.ogg:serviette
-toy.ogg:jouet
-trail.ogg:piste
-train.ogg:train
-train_station.ogg:gare
-trap.ogg:piège
-trash.ogg:saleté
-tray.ogg:plateau
-tree.ogg:arbre
-triangle.ogg:triangle
-tribe.ogg:tribu
-trip.ogg:voyage
-truck.ogg:camion
-tulip.ogg:tulipe
-turkey.ogg:dinde
-turnip.ogg:navet
-turtle.ogg:tortue
-tusk.ogg:défense
+tissue.ogg:un mouchoir
+toad.ogg:un crapaud
+toaster.ogg:un grille-pain
+toe.ogg:un orteil
+toilet.ogg:les toilettes
+tomatoe.ogg:une tomate
+tongs.ogg:une pince
+tongue.ogg:une langue
+tool.ogg:un outil
+top.ogg:dessus
+torch.ogg:une torche
+touch.ogg:toucher
+towel.ogg:une serviette
+toy.ogg:un jouet
+trail.ogg:une piste
+train.ogg:un train
+train_station.ogg:une gare
+trap.ogg:un piège
+trash.ogg:la saleté
+tray.ogg:un plateau
+treat.ogg:un bonbon
+tree.ogg:un arbre
+triangle.ogg:un triangle
+tribe.ogg:une tribu
+trip.ogg:un voyage
+truck.ogg:un camion
+tube.ogg:un rouge à lèvres
+tulip.ogg:une tulipe
+tune.ogg:un air de musique
+turkey.ogg:une dinde
+turnip.ogg:un navet
+turtle.ogg:une tortue
+tusk.ogg:une défense
 twelve.ogg:douze
-twin_boys.ogg:jumeaux
-twin_girls.ogg:jumelles
-umbrella.ogg:parapluie
+twin_boys.ogg:un jumeau
+twin_girls.ogg:une jumelle
+umbrella.ogg:un parapluie
 under.ogg:sous
-uniform.ogg:uniforme
-vapor.ogg:vapeur
-vase.ogg:vase
-vegetable.ogg:légume
-vein.ogg:veine
-verdure.ogg:verdure
-vest.ogg:gilet
-vet.ogg:vétérinaire
-viper.ogg:vipère
-vowel.ogg:voyelle
-vulture.ogg:vautour
-wag.ogg:lécher
+uniform.ogg:un uniforme
+van.ogg:un fourgon
+#vapor.ogg:NA
+vase.ogg:un vase
+vegetable.ogg:un légume
+vein.ogg:une veine
+verdure.ogg:la verdure
+vest.ogg:un gilet
+vet.ogg:un vétérinaire
+viper.ogg:une vipère
+vowel.ogg:une voyelle
+vulture.ogg:un vautour
+wag.ogg:remuer la queue
 walk.ogg:marcher
-wall.ogg:mur
-walnut.ogg:noix
-wart.ogg:verrue
-wash.ogg:laver
-wasp.ogg:guêpe
-water.ogg:eau
-wave.ogg:vague
-wedding.ogg:mariage
-wedge.ogg:cale
-weight.ogg:poids
+wall.ogg:un mur
+walnut.ogg:une noix
+wart.ogg:une verrue
+#wash.ogg:NA
+wasp.ogg:une guêpe
+watch.ogg:une montre
+water.ogg:de l'eau
+wave.ogg:une vague
+wedding.ogg:un mariage
+wedge.ogg:une cale
+weight.ogg:un poids
 wet.ogg:humide
-whale.ogg:baleine
-wheat.ogg:blé
-wheel.ogg:roue
-whisk.ogg:fouet
+whale.ogg:une baleine
+wheat.ogg:le blé
+wheel.ogg:une roue
+whisk.ogg:un fouet
 whisper.ogg:chuchoter
 white.ogg:blanc
 wide.ogg:large
-wig.ogg:perruque
-wind.ogg:vent
-window_glass.ogg:vitre
-window.ogg:fenêtre
-wing.ogg:aile
+#wife.ogg:NA
+wig.ogg:une perruque
 win.ogg:gagner
-winter.ogg:hiver
-wolf.ogg:loup
-woman.ogg:femme
-wood.ogg:bois
-word.ogg:mot
-world.ogg:monde
-wreath.ogg:couronne
-wrench.ogg:clé
-wrist.ogg:poignet
+wind.ogg:le vent
+window.ogg:une fenêtre
+window_glass.ogg:une vitre
+wing.ogg:une aile
+winter.ogg:un hiver
+wolf.ogg:un loup
+woman.ogg:une femme
+wood.ogg:le bois
+word.ogg:un mot
+worker.ogg:un travailleur
+world.ogg:le monde
+wreath.ogg:une couronne
+wrench.ogg:une clé
+wrist.ogg:un poignet
 write.ogg:écrire
-yarn.ogg:fil
 yellow.ogg:jaune
-yogurt.ogg:yaourt
-zebra.ogg:zèbre
+yogurt.ogg:un yaourt
+yum.ogg:miam-miam
+zebra.ogg:un zèbre
 zero.ogg:zéro
-zipper.ogg:fermeture éclair
+zipper.ogg:une fermeture éclair
+zoo.ogg:un zoo
 # Little ack, these are in voice/alphabet
 U0030.ogg:zéro
 U0031.ogg:un
@@ -978,3 +1103,12 @@ U0037.ogg:sept
 U0038.ogg:huit
 U0039.ogg:neuf
 10.ogg:dix
+#one.ogg:NA
+#two.ogg:NA
+#three.ogg:NA
+#four.ogg:NA
+#five.ogg:NA
+#six.ogg:NA
+#seven.ogg:NA
+#eight.ogg:NA
+#nine.ogg:NA
