@@ -363,7 +363,7 @@ flute.ogg:une flûte
 fly.ogg:voler
 foam.ogg:la mousse
 food.ogg:un hamburger
-foot.ogg:un pied
+#foot.ogg:NA
 forest.ogg:une forêt
 fork.ogg:une fourchette
 fountain.ogg:une fontaine
