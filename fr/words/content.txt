@@ -333,7 +333,7 @@ fawn.ogg:un faon
 feast.ogg:un poulet
 feather.ogg:une plume
 feed.ogg:nourrir
-feet.ogg:un pied
+#feet.ogg:NA
 #fell.ogg:NA
 femur.ogg:un fémur
 fetch.ogg:rapporter
