@@ -146,7 +146,6 @@ cyclist.ogg:rothaiche mòr
 dad.ogg:dadaidh mòr
 dance.ogg:a' dannsadh
 danger.ogg:cunnart mòr
-dark.ogg:falt dorcha
 den.ogg:saobhaidh mòr
 desk.ogg:deasg beag
 dig.ogg:a' cladhach
