@@ -32,14 +32,12 @@ baby.ogg:bebe
 back.ogg:espalda
 bad.ogg:malo
 bag.ogg:bolsa
-bake.ogg:hornear
 bald.ogg:calvo
 ballet.ogg:ballet
 bank.ogg:banco
 bark.ogg:ladrido
 barn.ogg:granero
 basket.ogg:canasta
-bat.ogg:bat
 bath.ogg:baño
 be.ogg:ser
 beach.ogg:playa
@@ -78,9 +76,7 @@ bridge.ogg:puente
 bright.ogg:brillante
 bring.ogg:llevar
 broccoli.ogg:brócoli
-brother.ogg:hermano
 brown.ogg:marrón
-brush.ogg:cepillar
 bubble.ogg:burbuja
 bucket.ogg:cubo
 bug.ogg:escarabajo
@@ -102,7 +98,7 @@ camera.ogg:cámara
 camp.ogg:campamento
 candle.ogg:vela
 candy.ogg:caramelo
-cane.ogg:cana
+cane.ogg:caña
 canoe.ogg:canoa
 cape.ogg:capa
 car.ogg:coche
@@ -118,7 +114,6 @@ chain.ogg:cadena
 chair.ogg:silla
 chalk.ogg:tiza
 chat.ogg:charlar
-cheek.ogg:mejilla
 cheese.ogg:queso
 cherry.ogg:cereza
 chick.ogg:pollito
@@ -165,7 +160,6 @@ dad.ogg:papá
 daisy.ogg:margarita
 dance.ogg:bailar
 danger.ogg:peligro
-dark.ogg:oscuro
 day.ogg:dia
 dead.ogg:muerto
 december.ogg:Diciembre
@@ -177,7 +171,6 @@ diamond.ogg:diamante
 die.ogg:morir
 dig.ogg:cavar
 dirty.ogg:sucio
-dish.ogg:plato
 dive.ogg:inmersión
 do.ogg:hacer
 doctor.ogg:médico
@@ -234,7 +227,6 @@ finger.ogg:dedo
 fire.ogg:fuego
 fireman.ogg:bombero
 first.ogg:primero
-fish.ogg:pescado
 fisherman.ogg:pescador
 fist.ogg:puño
 five.ogg:cinco
@@ -495,7 +487,6 @@ prince.ogg:príncipe
 princess.ogg:princesa
 print.ogg:imprimir
 prison.ogg:prisión
-pull.ogg:tirar
 pullover.ogg:jersey
 pumpkin.ogg:calabaza
 purple.ogg:púrpura
@@ -520,7 +511,6 @@ risk.ogg:riesgo
 river.ogg:río
 road.ogg:carretera
 robot.ogg:robot
-rock.ogg:rock
 rocket.ogg:cohete
 roof.ogg:techo
 rooster.ogg:gallo
@@ -576,7 +566,6 @@ small.ogg:pequeño
 smart.ogg:inteligente
 smell.ogg:olor
 smile.ogg:sonreír
-smoke.ogg:fumar
 snack.ogg:bocadillo
 snail.ogg:caracol
 snake.ogg:serpiente
@@ -599,8 +588,6 @@ sponge.ogg:esponja
 spoon.ogg:cuchara
 sport.ogg:deporte
 spouse.ogg:cónyuge
-spray.ogg:spray
-spring.ogg:primavera
 squirrel.ogg:ardilla
 stain.ogg:mancha
 stamp.ogg:sello
@@ -612,7 +599,6 @@ stick.ogg:palo
 stone.ogg:piedra
 stop.ogg:parar
 store.ogg:almacenar
-stove.ogg:estufa
 straight.ogg:recto
 straw.ogg:paja
 strawberry.ogg:fresa
