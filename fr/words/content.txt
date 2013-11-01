@@ -1088,7 +1088,6 @@ yellow.ogg:jaune
 yogurt.ogg:un yaourt
 yum.ogg:miam-miam
 zebra.ogg:un zèbre
-zero.ogg:zéro
 zipper.ogg:une fermeture éclair
 zoo.ogg:un zoo
 # Little ack, these are in voice/alphabet
