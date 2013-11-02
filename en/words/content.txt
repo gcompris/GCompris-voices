@@ -532,7 +532,6 @@ blond.ogg:blond
 bright.ogg:bright
 crazy.ogg:crazy
 cute.ogg:cute
-dark.ogg:dark
 dot.ogg:dot
 empty.ogg:empty
 fat.ogg:fat

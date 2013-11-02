@@ -32,18 +32,13 @@ baby.ogg:bebe
 back.ogg:espalda
 bad.ogg:malo
 bag.ogg:bolsa
-bake.ogg:hornear
 bald.ogg:calvo
-ball.ogg:bola
-ballena.ogg:ballena
 ballet.ogg:ballet
-banana.ogg:banano
 bank.ogg:banco
 bark.ogg:ladrido
 barn.ogg:granero
 basket.ogg:canasta
-bat.ogg:bat
-bath.ogg:bano
+bath.ogg:baño
 be.ogg:ser
 beach.ogg:playa
 bean.ogg:frejol
@@ -53,7 +48,6 @@ bed.ogg:cama
 bedroom.ogg:dormitorio
 bee.ogg:abeja
 beef.ogg:carne de res
-behind.ogg:detras
 bell.ogg:campana
 belly.ogg:vientre
 bet.ogg:apostar
@@ -66,7 +60,6 @@ black.ogg:negro
 blind.ogg:ciego
 blond.ogg:rubio
 blue.ogg:azul
-board.ogg:borde
 boat.ogg:barco
 boil.ogg:hervir
 bomb.ogg:bomba
@@ -74,7 +67,7 @@ bone.ogg:hueso
 book.ogg:libro
 bowl.ogg:cuenco
 box.ogg:caja
-boy.ogg:nino
+boy.ogg:niño
 brain.ogg:cerebro
 branch.ogg:rama
 bread.ogg:pan
@@ -83,14 +76,12 @@ bridge.ogg:puente
 bright.ogg:brillante
 bring.ogg:llevar
 broccoli.ogg:brócoli
-brother.ogg:hermano
 brown.ogg:marrón
-brush.ogg:cepillar
 bubble.ogg:burbuja
 bucket.ogg:cubo
 bug.ogg:escarabajo
 build.ogg:construir
-bus.ogg:autobus
+bus.ogg:autobús
 butcher.ogg:carnicero
 butter.ogg:mantequilla
 butterfly.ogg:mariposa
@@ -107,7 +98,7 @@ camera.ogg:cámara
 camp.ogg:campamento
 candle.ogg:vela
 candy.ogg:caramelo
-cane.ogg:cana
+cane.ogg:caña
 canoe.ogg:canoa
 cape.ogg:capa
 car.ogg:coche
@@ -123,7 +114,6 @@ chain.ogg:cadena
 chair.ogg:silla
 chalk.ogg:tiza
 chat.ogg:charlar
-cheek.ogg:mejilla
 cheese.ogg:queso
 cherry.ogg:cereza
 chick.ogg:pollito
@@ -155,7 +145,6 @@ color.ogg:color
 comb.ogg:peine
 cone.ogg:cono
 cookie.ogg:galleta
-cool.ogg:fresco
 corn.ogg:maíz
 couple.ogg:pareja
 cow.ogg:vaca
@@ -163,7 +152,6 @@ crab.ogg:cangrejo
 crazy.ogg:loco
 cream.ogg:crema
 crocodile.ogg:cocodrilo
-cross.ogg:cruzar
 cry.ogg:llorar
 cucumber.ogg:pepino
 curtain.ogg:cortina
@@ -172,8 +160,6 @@ dad.ogg:papá
 daisy.ogg:margarita
 dance.ogg:bailar
 danger.ogg:peligro
-dark.ogg:oscuro
-date.ogg:fecha
 day.ogg:dia
 dead.ogg:muerto
 december.ogg:Diciembre
@@ -185,7 +171,6 @@ diamond.ogg:diamante
 die.ogg:morir
 dig.ogg:cavar
 dirty.ogg:sucio
-dish.ogg:plato
 dive.ogg:inmersión
 do.ogg:hacer
 doctor.ogg:médico
@@ -206,7 +191,6 @@ duck.ogg:pato
 dune.ogg:duna
 dwarf.ogg:enano
 eagle.ogg:águila
-ear.ogg:oído
 earth.ogg:tierra
 eat.ogg:comer
 egg.ogg:huevo
@@ -243,14 +227,11 @@ finger.ogg:dedo
 fire.ogg:fuego
 fireman.ogg:bombero
 first.ogg:primero
-fish.ogg:pescado
 fisherman.ogg:pescador
 fist.ogg:puño
 five.ogg:cinco
 flag.ogg:bandera
 flame.ogg:llama
-flat.ogg:plano
-flight.ogg:vuelo
 flour.ogg:harina
 flower.ogg:flor
 flute.ogg:flauta
@@ -269,7 +250,6 @@ frog.ogg:rana
 front.ogg:enfrente
 front.ogg:frente
 fruit.ogg:fruta
-full.ogg:completo
 fun.ogg:diversión
 fur.ogg:piel
 game.ogg:juego
@@ -283,7 +263,6 @@ giant.ogg:gigante
 gift.ogg:regalo
 giraffe.ogg:jirafa
 girl.ogg:chica
-glass.ogg:vidrio
 glasses.ogg:gafas
 glove.ogg:guante
 glue.ogg:pegamento
@@ -300,7 +279,6 @@ gray.ogg:gris
 great_britain.ogg:Gran bretaña
 green.ogg:verde
 grill.ogg:grilla
-ground.ogg:suelo
 grow.ogg:crecer
 hair.ogg:cabello
 hairdresser.ogg:peluquero
@@ -337,7 +315,7 @@ hot.ogg:caliente
 house.ogg:casa
 huge.ogg:enorme
 hunter.ogg:cazador
-hurt.ogg:dano
+hurt.ogg:daño
 husband.ogg:marido
 ice.ogg:hielo
 ill.ogg:enfermo
@@ -350,7 +328,6 @@ january.ogg:Enero
 jelly.ogg:jalea
 jewel.ogg:joya
 judge.ogg:juez
-juice.ogg:jugo
 july.ogg:Julio
 jump.ogg:saltar
 june.ogg:Junio
@@ -366,14 +343,12 @@ knot.ogg:nudo
 know.ogg:saber
 koala.ogg:coala
 ladder.ogg:escalera
-lady.ogg:dama
 ladybug.ogg:mariquita
 lake.ogg:lago
 lamb.ogg:cordero
 lamp.ogg:lámpara
 lane.ogg:carril
-lap.ogg:vuelta
-laugh.ogg:reir
+laugh.ogg:reír
 lava.ogg:lava
 lawn.ogg:cesped
 lazy.ogg:perezoso
@@ -398,7 +373,6 @@ lip.ogg:labio
 liquid.ogg:líquido
 lizard.ogg:lagartija
 lobster.ogg:langosta
-look.ogg:buscar
 love.ogg:amor
 luck.ogg:suerte
 lunch.ogg:almuerzo
@@ -406,7 +380,6 @@ mail.ogg:correo
 male.ogg:masculino
 man.ogg:hombre
 map.ogg:mapa
-march.ogg:Marzo
 mask.ogg:máscara
 may.ogg:Mayo
 meal.ogg:comida
@@ -437,7 +410,6 @@ neck.ogg:cuello
 necklace.ogg:collar
 needle.ogg:aguja
 nest.ogg:nido
-net.ogg:neto
 newspaper.ogg:periódico
 night.ogg:noche
 nine.ogg:nueve
@@ -457,7 +429,6 @@ ocean.ogg:océano
 october.ogg:Octubre
 oil.ogg:aceite
 olive.ogg:oliva
-on.ogg:encima
 one.ogg:uno
 onion.ogg:cebolla
 open.ogg:abrir
@@ -480,7 +451,7 @@ peach.ogg:melocotón
 pear.ogg:pera
 pearl.ogg:perla
 pen.ogg:pluma
-pencil.ogg:lapiz
+pencil.ogg:lápiz
 pepper.ogg:pimienta
 petal.ogg:pétalo
 phone.ogg:teléfono
@@ -497,7 +468,6 @@ pink.ogg:rosa
 pirate.ogg:pirata
 pizza.ogg:pizza
 planet.ogg:planeta
-plate.ogg:placa
 play.ogg:jugar
 please.ogg:complacer
 plum.ogg:ciruela
@@ -517,7 +487,6 @@ prince.ogg:príncipe
 princess.ogg:princesa
 print.ogg:imprimir
 prison.ogg:prisión
-pull.ogg:tirar
 pullover.ogg:jersey
 pumpkin.ogg:calabaza
 purple.ogg:púrpura
@@ -527,7 +496,6 @@ question.ogg:cuestión
 quick.ogg:rápido
 quiet.ogg:tranquilo
 rabbit.ogg:conejo
-race.ogg:raza
 radio.ogg:radio
 rain.ogg:lluvia
 rake.ogg:rastrillo
@@ -538,21 +506,16 @@ red.ogg:rojo
 reptile.ogg:reptil
 rhinoceros.ogg:rinoceronte
 rice.ogg:arroz
-right.ogg:derecho
 ring.ogg:anillo
 risk.ogg:riesgo
 river.ogg:río
 road.ogg:carretera
 robot.ogg:robot
-rock.ogg:rock
 rocket.ogg:cohete
 roof.ogg:techo
-room.ogg:habitación
 rooster.ogg:gallo
 root.ogg:raíz
 rope.ogg:cuerda
-round.ogg:redondear
-run.ogg:ejecutar
 sad.ogg:triste
 sail.ogg:navegar
 sailor.ogg:marinero
@@ -569,7 +532,6 @@ scorpion.ogg:escorpión
 scream.ogg:gritar
 screen.ogg:pantalla
 sea.ogg:mar
-seat.ogg:asiento
 see.ogg:ver
 seed.ogg:semilla
 sell.ogg:vender
@@ -577,19 +539,15 @@ september.ogg:Septiembre
 seven.ogg:siete
 shadow.ogg:sombra
 shake.ogg:sacudir
-shape.ogg:forma a
 shark.ogg:tiburón
 sheep.ogg:oveja
 shell.ogg:concha
-ship.ogg:enviar
 shirt.ogg:camisa
 shoe.ogg:zapato
-shop.ogg:compras
 short.ogg:corto
 shovel.ogg:pala
 shower.ogg:ducha
 shrimp.ogg:camarón
-sign.ogg:firmar
 silence.ogg:silencio
 silver.ogg:plata
 sing.ogg:cantar
@@ -608,7 +566,6 @@ small.ogg:pequeño
 smart.ogg:inteligente
 smell.ogg:olor
 smile.ogg:sonreír
-smoke.ogg:fumar
 snack.ogg:bocadillo
 snail.ogg:caracol
 snake.ogg:serpiente
@@ -619,10 +576,8 @@ soft.ogg:suave
 soldier.ogg:soldado
 son.ogg:hijo
 sorry.ogg:arrepentido
-sound.ogg:sonar
 soup.ogg:sopa
 space.ogg:espacio
-spain.ogg:Espana
 speak.ogg:hablar
 spice.ogg:especia
 spider.ogg:araña
@@ -632,25 +587,18 @@ split.ogg:dividido
 sponge.ogg:esponja
 spoon.ogg:cuchara
 sport.ogg:deporte
-spot.ogg:lugar
 spouse.ogg:cónyuge
-spray.ogg:spray
-spring.ogg:primavera
-square.ogg:plaza
 squirrel.ogg:ardilla
-stage.ogg:etapa
 stain.ogg:mancha
 stamp.ogg:sello
 star.ogg:estrella
 start.ogg:iniciar
 steak.ogg:filete
 stem.ogg:vástago
-step.ogg:paso
 stick.ogg:palo
 stone.ogg:piedra
 stop.ogg:parar
 store.ogg:almacenar
-stove.ogg:estufa
 straight.ogg:recto
 straw.ogg:paja
 strawberry.ogg:fresa
@@ -667,7 +615,6 @@ sunday.ogg:Domingo
 super.ogg:súper
 sweat.ogg:sudar
 sweatshirt.ogg:Sudadera
-sweep.ogg:barrido
 sweet.ogg:dulce
 swim.ogg:nadar
 swiss.ogg:suizo
@@ -684,10 +631,8 @@ tell.ogg:contar
 temple.ogg:templo
 ten.ogg:diez
 tennis.ogg:tenis
-tent.ogg:tienda
 text.ogg:texto
 thank.ogg:agradecer
-thick.ogg:espesor
 thief.ogg:ladrón
 think.ogg:pensar
 three.ogg:tres
@@ -699,19 +644,16 @@ time.ogg:tiempo
 tired.ogg:cansado
 tissue.ogg:tejido
 today.ogg:hoy
-toilet.ogg:inodoro
 tomato.ogg:tomate
 tomorrow.ogg:mañana
 tongue.ogg:lengua
 tool.ogg:herramienta
-tourist.ogg:turístico
 towel.ogg:toalla
 tower.ogg:torre
 toy.ogg:juguete
-trail.ogg:rastro
 train.ogg:tren
 train_station.ogg:estación de tren
-tree.ogg:arbol
+tree.ogg:árbol
 triangle.ogg:triángulo
 trip.ogg:viaje
 truck.ogg:camión
@@ -724,12 +666,9 @@ turtle.ogg:tortuga marina
 twelve.ogg:doce
 two.ogg:dos
 umbrella.ogg:paraguas
-under.ogg:bajo
 uniform.ogg:uniforme
 valley.ogg:valle
 vase.ogg:florero
-vegetable.ogg:vegetal
-vest.ogg:chaleco
 vet.ogg:veterinario
 viper.ogg:víbora
 voice.ogg:voz
@@ -742,7 +681,6 @@ wash.ogg:lavar
 wasp.ogg:avispa
 water.ogg:agua
 wave.ogg:ola
-wear.ogg:desgaste
 wedding.ogg:boda
 wednesday.ogg:miércoles
 weight.ogg:peso
@@ -771,7 +709,6 @@ yellow.ogg:amarillo
 yesterday.ogg:ayer
 yogurt.ogg:yogur
 zebra.ogg:cebra
-zoo.ogg:zoológico
 # Little ack, these are in voice/alphabet
 U0030.ogg:cero
 U0031.ogg:uno
