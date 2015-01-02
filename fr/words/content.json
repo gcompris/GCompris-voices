@@ -1100,14 +1100,5 @@
     {"U0037.ogg": "sept"},
     {"U0038.ogg": "huit"},
     {"U0039.ogg": "neuf"},
-    {"10.ogg": "dix"},
-    {"#one.ogg": "NA"},
-    {"#two.ogg": "NA"},
-    {"#three.ogg": "NA"},
-    {"#four.ogg": "NA"},
-    {"#five.ogg": "NA"},
-    {"#six.ogg": "NA"},
-    {"#seven.ogg": "NA"},
-    {"#eight.ogg": "NA"},
-    {"#nine.ogg": "NA"}
+    {"10.ogg": "dix"}
 ]
