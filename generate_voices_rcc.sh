@@ -29,10 +29,31 @@ MD5SUM=/usr/bin/md5sum
     exit 1
 }
 
+function generate_rcc {
+    # Generate RCC 
+    echo -n "$1 ... "
+    ${RCC} -binary $1 -o $2
+
+    echo "md5sum ... "
+    cd ${RCC_DIR}
+    ${MD5SUM} `basename $2` >>${CONTENTS_FILE}
+    cd - &>/dev/null
+}
+
 echo "Generating binary resource files in ${RCC_DIR}/ folder:"
 
 [ -d ${RCC_DIR} ] && rm -rf ${RCC_DIR}
 mkdir  ${RCC_DIR}
+
+#header of the global qrc (all the langs)
+QRC_ALL_FILE="${QRC_DIR}/voices.qrc"
+RCC_ALL_FILE="${RCC_DIR}/voices.rcc"
+(cat <<EOHEADER
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+EOHEADER
+) > $QRC_ALL_FILE
+
 
 for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{2,3}(_[A-Z]{2,3})?"`; do
     QRC_FILE="${QRC_DIR}/voices-${LANG#./}.qrc"
@@ -54,7 +75,10 @@ for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{
 EOHEADER
 ) >> $QRC_FILE
     for i in `find ${LANG} -not -type d`; do
+	# For the lang file
         echo "    <file>${i#./}</file>" >> $QRC_FILE
+	# For the all lang file
+        echo "    <file>${i#./}</file>" >> $QRC_ALL_FILE
     done
     #footer:
     (cat <<EOFOOTER
@@ -63,18 +87,21 @@ EOHEADER
 EOFOOTER
 ) >> $QRC_FILE
 
-    # Generate RCC
-    echo -n "${RCC_FILE} ... "
-    ${RCC} -binary ${QRC_FILE} -o ${RCC_FILE}
+    generate_rcc ${QRC_FILE} ${RCC_FILE} 
 
-    echo "md5sum ... "
-    cd ${RCC_DIR}
-    ${MD5SUM} `basename ${RCC_FILE}` >>${CONTENTS_FILE}
-    cd - &>/dev/null
 done
 
-#cleanup:
-rm *.qrc
+#footer of the global qrc (all the langs)
+(cat <<EOFOOTER
+</qresource>
+</RCC>
+EOFOOTER
+) >> $QRC_ALL_FILE
+
+generate_rcc ${QRC_ALL_FILE} ${RCC_ALL_FILE} 
+
+cleanup:
+rm -f *.qrc
 
 echo "Finished! Now do something like:"
 echo "rsync -avx ${RCC_DIR}/  www.gcompris.net:/path/to/www/gcompris/data/voices/"
