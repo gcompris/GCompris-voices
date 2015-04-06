@@ -29,14 +29,68 @@ MD5SUM=/usr/bin/md5sum
     exit 1
 }
 
+[ $# -ne 1 ] && {
+    echo "Usage: generate_voices_rcc.sh <path to gtk lang words dir>"
+    exit 1
+}
+WORDS_DIR=$1
+[ ! -d "${WORDS_DIR}" ] && {
+    echo "Words dir ${WORDS_DIR} not found"
+    exit 1
+}
+[ -d words ] && rm -rf words
+ln -s ${WORDS_DIR} words
+
+function generate_rcc {
+    # Generate RCC 
+    echo -n "$2 ... "
+    mkdir -p ${2%/*}
+    ${RCC} -binary $1 -o $2
+
+    echo "md5sum ... "
+    cd ${2%/*}
+    ${MD5SUM}  ${2##*/}>> ${CONTENTS_FILE}
+    cd - &>/dev/null
+}
+
+function header_rcc {
+(cat <<EOHEADER
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/gcompris/data">
+EOHEADER
+) > $1
+}
+
+function footer_rcc {
+(cat <<EOFOOTER
+</qresource>
+</RCC>
+EOFOOTER
+) >> $1
+}
+
 echo "Generating binary resource files in ${RCC_DIR}/ folder:"
 
 [ -d ${RCC_DIR} ] && rm -rf ${RCC_DIR}
 mkdir  ${RCC_DIR}
 
+#header of the global qrc (all the langs)
+QRC_FULL_FILE="${QRC_DIR}/full.qrc"
+RCC_FULL_FILE="${RCC_DIR}/full.rcc"
+header_rcc $QRC_FULL_FILE
+
+# Create the voices directory that will contains links to locales dir
+VOICE_DIR='voices-ogg'
+[ -d ${RCC_DIR} ] && rm -rf ${RCC_DIR}
+rm -rf ${VOICE_DIR}
+mkdir -p ${VOICE_DIR}
+
 for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{2,3}(_[A-Z]{2,3})?"`; do
     QRC_FILE="${QRC_DIR}/voices-${LANG#./}.qrc"
-    RCC_FILE="${RCC_DIR}/voices-${LANG#./}.rcc"
+    RCC_FILE="${RCC_DIR}/${VOICE_DIR}/voices-${LANG#./}.rcc"
+
+    # Populate the voices backlinks
+    ln -s -t ${VOICE_DIR} ../$LANG
 
     # Generate QRC:
     echo -n "  ${LANG#./}: ${QRC_FILE} ... "
@@ -47,35 +101,44 @@ for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{
     fi
     [ -e ${QRC_FILE} ] && rm ${QRC_FILE}
 
-    #header:
-    (cat <<EOHEADER
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-EOHEADER
-) >> $QRC_FILE
+    header_rcc $QRC_FILE
     for i in `find ${LANG} -not -type d`; do
-        echo "    <file>${i#./}</file>" >> $QRC_FILE
+	# For the lang file
+        echo "    <file>${VOICE_DIR}/${i#./}</file>" >> $QRC_FILE
+	# For the all lang file
+        echo "    <file>${VOICE_DIR}/${i#./}</file>" >> $QRC_FULL_FILE
     done
-    #footer:
-    (cat <<EOFOOTER
-</qresource>
-</RCC>
-EOFOOTER
-) >> $QRC_FILE
+    footer_rcc $QRC_FILE
+    generate_rcc ${QRC_FILE} ${RCC_FILE}
 
-    # Generate RCC
-    echo -n "${RCC_FILE} ... "
-    ${RCC} -binary ${QRC_FILE} -o ${RCC_FILE}
-
-    echo "md5sum ... "
-    cd ${RCC_DIR}
-    ${MD5SUM} `basename ${RCC_FILE}` >>${CONTENTS_FILE}
-    cd - &>/dev/null
 done
 
+# Word images for the full qrc
+for i in `find words/ -not -type d`; do
+    echo "    <file>${i#${WORDS_DIR}}</file>" >> $QRC_FULL_FILE
+done
+
+#footer of the global qrc (all the langs)
+footer_rcc $QRC_FULL_FILE
+
+echo -n "  full: ${QRC_FULL_FILE} ... "
+generate_rcc ${QRC_FULL_FILE} ${RCC_FULL_FILE}
+
+# Word images standalone rcc
+header_rcc "${QRC_DIR}/words.qrc"
+for i in `find words/ -not -type d`; do
+    echo "    <file>${i#${WORDS_DIR}}</file>" >> "${QRC_DIR}/words.qrc"
+done
+footer_rcc "${QRC_DIR}/words.qrc"
+echo -n "  words: "${QRC_DIR}/words.qrc" ... "
+generate_rcc "${QRC_DIR}/words.qrc" "${RCC_DIR}/words/words.rcc"
+
+
 #cleanup:
-rm *.qrc
+#rm -f *.qrc
+#rm words
+#rm -rf ${VOICE_DIR}
 
 echo "Finished! Now do something like:"
-echo "rsync -avx ${RCC_DIR}/  www.gcompris.net:/path/to/www/gcompris/data/voices/"
+echo "rsync -avx ${RCC_DIR}/  gcompris.net:/var/www/data2/"
 #EOF
