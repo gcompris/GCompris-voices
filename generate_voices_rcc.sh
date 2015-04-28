@@ -6,16 +6,12 @@
 #
 # Generates Qt binary resource files (.rcc) for voices locales.
 #
-# Usage:
-# cd git/GCompris-voices/
-# generate_voices_rcc.sh ogg|aac <path to gtk lang words dir>
-#
 # Results will be written to $PWD/.rcc/ which is supposed be synced to the
 # upstream location.
 #
 
 [ $# -ne 2 ] && {
-    echo "Usage: generate_voices_rcc.sh ogg|aac <path to gtk lang words dir>"
+    echo "Usage: generate_voices_rcc.sh ogg|aac|ac3|mp3 <path to gtk lang words dir>"
     exit 1
 }
 # Compressed Audio Format
@@ -98,7 +94,7 @@ for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{
     # Generate QRC:
     echo -n "  ${LANG#./}: ${QRC_FILE} ... "
     # check for junk in the voices dirs:
-    if [ ! -z "`git status --porcelain ${LANG} | grep '^??'`" ]; then
+    if [[ -d .git && ! -z "`git status --porcelain ${LANG} | grep '^??'`" ]]; then
         echo "Warning, found untracked files in your git checkout below ${LANG}. Better "git clean -f" it first!";
     fi
     [ -e ${QRC_FILE} ] && rm ${QRC_FILE}
@@ -141,6 +137,11 @@ generate_rcc "${QRC_DIR}/words.qrc" "${RCC_DIR}/words/words.rcc"
 #rm words
 #rm -rf ${VOICE_DIR}
 
-echo "Finished! Now do something like:"
+echo "Finished!"
+echo ""
+echo "Consolidate .rcc/Contents in a master ${RCC_DIR}"
+echo "containing all the encoded content."
+echo ""
+echo "Then do something like:"
 echo "rsync -avx ${RCC_DIR}/  gcompris.net:/var/www/data2/"
 #EOF
