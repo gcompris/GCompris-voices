@@ -8,11 +8,18 @@
 #
 # Usage:
 # cd git/GCompris-voices/
-# generate_voices_rcc.sh
+# generate_voices_rcc.sh ogg|aac <path to gtk lang words dir>
 #
 # Results will be written to $PWD/.rcc/ which is supposed be synced to the
 # upstream location.
 #
+
+[ $# -ne 2 ] && {
+    echo "Usage: generate_voices_rcc.sh ogg|aac <path to gtk lang words dir>"
+    exit 1
+}
+# Compressed Audio Format
+CA=$1
 
 QRC_DIR="."
 RCC_DIR=".rcc"
@@ -29,11 +36,7 @@ MD5SUM=/usr/bin/md5sum
     exit 1
 }
 
-[ $# -ne 1 ] && {
-    echo "Usage: generate_voices_rcc.sh <path to gtk lang words dir>"
-    exit 1
-}
-WORDS_DIR=$1
+WORDS_DIR=$2
 [ ! -d "${WORDS_DIR}" ] && {
     echo "Words dir ${WORDS_DIR} not found"
     exit 1
@@ -75,12 +78,12 @@ echo "Generating binary resource files in ${RCC_DIR}/ folder:"
 mkdir  ${RCC_DIR}
 
 #header of the global qrc (all the langs)
-QRC_FULL_FILE="${QRC_DIR}/full.qrc"
-RCC_FULL_FILE="${RCC_DIR}/full.rcc"
+QRC_FULL_FILE="${QRC_DIR}/full-${CA}.qrc"
+RCC_FULL_FILE="${RCC_DIR}/full-${CA}.rcc"
 header_rcc $QRC_FULL_FILE
 
 # Create the voices directory that will contains links to locales dir
-VOICE_DIR='voices-ogg'
+VOICE_DIR="voices-${CA}"
 [ -d ${RCC_DIR} ] && rm -rf ${RCC_DIR}
 rm -rf ${VOICE_DIR}
 mkdir -p ${VOICE_DIR}
@@ -96,8 +99,7 @@ for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{
     echo -n "  ${LANG#./}: ${QRC_FILE} ... "
     # check for junk in the voices dirs:
     if [ ! -z "`git status --porcelain ${LANG} | grep '^??'`" ]; then
-        echo "Found untracked files in your git checkout below ${LANG}. Better "git clean -f" it first!";
-        exit 1;
+        echo "Warning, found untracked files in your git checkout below ${LANG}. Better "git clean -f" it first!";
     fi
     [ -e ${QRC_FILE} ] && rm ${QRC_FILE}
 
