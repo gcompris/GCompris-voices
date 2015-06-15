@@ -2,13 +2,19 @@
 
 # First create a new directory (aac ac3 mp3)
 # Example for aac:
-# rsync -a voices.ogg/ voices.aac
+# rsync -a --exclude .git voices.ogg/ voices.aac
 # cd voices.aac
 # ./encodeTo.sh
 
 if [ $# -ne 1 ]
 then
   echo "Usage $(basename $0) aac|ac3|mp3"
+  exit 1
+fi
+
+if [ ! -d af ]
+then
+  echo "ERROR: move to the voice directory first"
   exit 1
 fi
 
