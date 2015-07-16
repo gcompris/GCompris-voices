@@ -37,15 +37,21 @@ fi
 echo "Transcode ogg files to $format"
 for f in $(find . -type f -name \*.ogg)
 do
-    echo "Processing $f"
+    #echo "Processing $f"
     avconv -v warning -i $f -acodec $codec ${f%.*}.${format}
+    if [ $? -ne 0 ]
+    then
+       echo "ERROR: Failed to convert $f"
+       echo "Cancelled"
+       exit 1
+    fi
     rm -f $f
 done
 
 echo "Fix symlinks"
 for f in $(find . -type l -name \*.ogg)
 do
-    echo "Processing $f"
+    #echo "Processing $f"
     target=$(readlink -f $f)
     rm $f
     ln -s -r ${target%.*}.${format} ${f%.*}.${format}
