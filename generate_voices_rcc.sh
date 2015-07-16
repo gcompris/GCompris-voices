@@ -123,14 +123,18 @@ echo -n "  full: ${QRC_FULL_FILE} ... "
 generate_rcc ${QRC_FULL_FILE} ${RCC_FULL_FILE}
 
 # Word images standalone rcc
-header_rcc "${QRC_DIR}/words.qrc"
-for i in `find words/ -not -type d`; do
-    echo "    <file>${i#${WORDS_DIR}}</file>" >> "${QRC_DIR}/words.qrc"
-done
-footer_rcc "${QRC_DIR}/words.qrc"
-echo -n "  words: "${QRC_DIR}/words.qrc" ... "
-generate_rcc "${QRC_DIR}/words.qrc" "${RCC_DIR}/words/words.rcc"
-
+# This is generated only when the script is called to generate ogg files
+# as this is our reference and images does not depends on the audio codec
+if [[ $CA == ogg ]]
+then
+    header_rcc "${QRC_DIR}/words.qrc"
+    for i in `find words/ -not -type d`; do
+	echo "    <file>${i#${WORDS_DIR}}</file>" >> "${QRC_DIR}/words.qrc"
+    done
+    footer_rcc "${QRC_DIR}/words.qrc"
+    echo -n "  words: "${QRC_DIR}/words.qrc" ... "
+    generate_rcc "${QRC_DIR}/words.qrc" "${RCC_DIR}/words/words.rcc"
+fi
 
 #cleanup:
 #rm -f *.qrc
