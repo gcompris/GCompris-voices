@@ -23,7 +23,9 @@ def get_intro_from_code():
     activity_dir = gcompris_qt + "/src/activities"
     for activity in os.listdir(activity_dir):
         # Skip unrelevant activities
-        if activity == 'template' or not os.path.isdir(activity_dir + "/" + activity):
+        if activity == 'template' or \
+           activity == 'menu' or \
+           not os.path.isdir(activity_dir + "/" + activity):
             continue
 
         try:
