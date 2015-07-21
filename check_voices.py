@@ -245,9 +245,10 @@ def get_gletter_alphabet():
     return letters
 
 def diff_set(title, code, files):
+    '''Returns a stat from 0 to 1 for this report set'''
 
     if not code and not files:
-        return
+        return 0
 
     title2(title)
 
@@ -289,6 +290,8 @@ def diff_set(title, code, files):
             else:
                 print '|%s |  |' %(f)
         print ''
+
+    return 1 - float(len(code - files)) / len(code | files)
 
 def diff_locale_set(title, code, files):
 
@@ -352,23 +355,37 @@ def check_locale_config(title, stats, locale_config):
 print '[TOC]'
 print ''
 
-stats = get_translation_status_from_po_files()
+string_stats = get_translation_status_from_po_files()
 check_locale_config("Locales to remove from LanguageList.qml (translation level < 80%)",
-                    stats, get_locales_from_config())
+                    string_stats, get_locales_from_config())
 
 init_intro_description_from_code()
 
 # Calc the big list of locales we have to check
 all_locales = get_locales_from_po_files() | get_locales_from_file()
+all_locales = list(all_locales)
+all_locales.sort()
+
+stats = {}
 
 for locale in all_locales:
     title1(u'{:s} ({:s})'.format(locale, (descriptions[locale] if descriptions.has_key(locale) else '')))
 
-    diff_set("Intro ({:s}/intro/)".format(locale), get_intro_from_code(), get_files(locale, 'intro'))
-    diff_set("Letters ({:s}/alphabet/)".format(locale), get_gletter_alphabet(), get_files(locale, 'alphabet'))
-    diff_set("Misc ({:s}/misc/)".format(locale), get_files('en', 'misc'), get_files(locale, 'misc'))
-    diff_set("Colors ({:s}/colors/)".format(locale), get_files('en', 'colors'), get_files(locale, 'colors'))
-    diff_set("Geography ({:s}/geography/)".format(locale), get_files('en', 'geography'), get_files(locale, 'geography'))
-    diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
+    lstats = {'locale': locale}
+    lstats['intro'] = diff_set("Intro ({:s}/intro/)".format(locale), get_intro_from_code(), get_files(locale, 'intro'))
+    lstats['letter'] = diff_set("Letters ({:s}/alphabet/)".format(locale), get_gletter_alphabet(), get_files(locale, 'alphabet'))
+    lstats['misc'] = diff_set("Misc ({:s}/misc/)".format(locale), get_files('en', 'misc'), get_files(locale, 'misc'))
+    lstats['color'] = diff_set("Colors ({:s}/colors/)".format(locale), get_files('en', 'colors'), get_files(locale, 'colors'))
+    lstats['geography'] = diff_set("Geography ({:s}/geography/)".format(locale), get_files('en', 'geography'), get_files(locale, 'geography'))
+    lstats['words'] = diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
+    stats[locale] = lstats
 
-
+sorted_keys = stats.keys()
+sorted_keys.sort()
+print '| Locale | Strings | Misc | Letters | Colors | Geography | Words | Intro|'
+print '|--------|---------|------|---------|--------|-----------|-------|------|'
+for locale in sorted_keys:
+    stat = stats[locale]
+    print '| {:s} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
+        .format(stat['locale'], string_stats[locale][3] if string_stats.has_key(locale) else 0,
+                stat['misc'], stat['letter'], stat['color'], stat['geography'], stat['words'], stat['intro'])
