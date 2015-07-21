@@ -31,7 +31,6 @@ from pprint import pprint
 import polib
 import codecs
 import locale
-from datetime import date
 
 if len(sys.argv) < 2:
     print "Usage: check_voices.py [-v] path_to_gcompris"
