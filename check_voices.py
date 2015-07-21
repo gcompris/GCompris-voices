@@ -31,6 +31,9 @@ from pprint import pprint
 import polib
 import codecs
 import locale
+from StringIO import StringIO
+import markdown
+from datetime import date
 
 if len(sys.argv) < 2:
     print "Usage: check_voices.py [-v] path_to_gcompris"
@@ -43,11 +46,30 @@ notneeded = '-nn' in sys.argv
 gcompris_qt = sys.argv[1]
 
 # Force ouput as UTF-8
+ref_stdout = sys.stdout
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 # A global has to hold a description on a key file like the UTF-8 char of
 # the file.
 descriptions = {}
+
+def get_html_header():
+    return """<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>GCompris Voice Recording Status</title>
+</head>
+<body>
+"""
+
+def get_html_footer():
+    today = date.today()
+    return """</body>
+<hr></hr>
+<p>Page generated the {:s}</p>
+</body>
+""".format(today.isoformat())
 
 def title1(title):
     print title
@@ -260,7 +282,7 @@ def diff_set(title, code, files):
         sorted.sort()
         for f in sorted:
             if descriptions.has_key(f):
-                print '| %s | %s |' %(f, descriptions[f])
+                print u'| %s | %s |' %(f, descriptions[f])
             else:
                 print '|%s |  |' %(f)
         print ''
@@ -273,7 +295,7 @@ def diff_set(title, code, files):
         sorted.sort()
         for f in sorted:
             if descriptions.has_key(f):
-                print '| %s | %s |' %(f, descriptions[f])
+                print u'| %s | %s |' %(f, descriptions[f])
             else:
                 print '|%s |  |' %(f)
         print ''
@@ -286,7 +308,7 @@ def diff_set(title, code, files):
         sorted.sort()
         for f in sorted:
             if descriptions.has_key(f):
-                print '|%s | %s|' %(f, descriptions[f])
+                print u'|%s | %s|' %(f, descriptions[f])
             else:
                 print '|%s |  |' %(f)
         print ''
@@ -352,8 +374,8 @@ def check_locale_config(title, stats, locale_config):
 # main
 # ===
 
-print '[TOC]'
-print ''
+reports = {}
+sys.stdout = reports['stats'] = StringIO()
 
 string_stats = get_translation_status_from_po_files()
 check_locale_config("Locales to remove from LanguageList.qml (translation level < 80%)",
@@ -369,6 +391,7 @@ all_locales.sort()
 stats = {}
 
 for locale in all_locales:
+    sys.stdout = reports[locale] = StringIO()
     title1(u'{:s} ({:s})'.format(locale, (descriptions[locale] if descriptions.has_key(locale) else '')))
 
     lstats = {'locale': locale}
@@ -380,12 +403,40 @@ for locale in all_locales:
     lstats['words'] = diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
     stats[locale] = lstats
 
+sys.stdout = reports['summary'] = StringIO()
 sorted_keys = stats.keys()
 sorted_keys.sort()
+title1("GCompris Voice Recording Status Summary")
 print '| Locale | Strings | Misc | Letters | Colors | Geography | Words | Intro|'
 print '|--------|---------|------|---------|--------|-----------|-------|------|'
 for locale in sorted_keys:
     stat = stats[locale]
-    print '| {:s} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
-        .format(stat['locale'], string_stats[locale][3] if string_stats.has_key(locale) else 0,
+    print '| [{:s}](voice_status_{:s}.html) | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
+        .format(stat['locale'], locale, string_stats[locale][3] if string_stats.has_key(locale) else 0,
                 stat['misc'], stat['letter'], stat['color'], stat['geography'], stat['words'], stat['intro'])
+
+#
+# Now we have all the reports
+#
+
+extensions=['markdown.extensions.tables']
+
+sys.stdout = ref_stdout
+
+with codecs.open("index.html", "w",
+                 encoding="utf-8",
+                 errors="xmlcharrefreplace"
+             ) as f:
+    f.write(get_html_header())
+    f.write(markdown.markdown(reports['summary'].getvalue(), extensions=extensions))
+    f.write(markdown.markdown(reports['stats'].getvalue(), extensions=extensions))
+    f.write(get_html_footer())
+
+for locale in sorted_keys:
+    with codecs.open("voice_status_{:s}.html".format(locale), "w",
+                     encoding="utf-8",
+                     errors="xmlcharrefreplace"
+                 ) as f:
+        f.write(get_html_header())
+        f.write(markdown.markdown(reports[locale].getvalue(), extensions=extensions))
+        f.write(get_html_footer())
