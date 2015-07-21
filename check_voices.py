@@ -19,7 +19,7 @@
 #
 #
 # The output is in markdown. A web page can be generated with:
-# /check_voices.py ../gcompris-kde  | markdown_py -x markdown.extensions.tables -x markdown.extensions.toc | ./check_voices_to_html.sh > voices_stats.html
+# ./check_voices.py ../gcompris-kde  | markdown_py -x markdown.extensions.tables -x markdown.extensions.toc | ./check_voices_to_html.sh > voices_stats.html
 #
 # (Requires python-markdown to be installed)
 #
