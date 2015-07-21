@@ -182,7 +182,7 @@ def get_gletter_alphabet():
     for level in data['levels']:
         for w in level['words']:
             multiletters = ""
-            for one_char in w:
+            for one_char in w.lower():
                 multiletters += 'U{:04X}'.format(ord(one_char))
             letters.add(multiletters + '.ogg')
 
