@@ -6,6 +6,8 @@ import re
 import json
 from pprint import pprint
 import polib
+import codecs
+import locale
 
 if len(sys.argv) < 2:
     print "Usage: check_voices.py [-v] path_to_gcompris"
@@ -14,6 +16,13 @@ if len(sys.argv) < 2:
 
 verbose = '-v' in sys.argv
 gcompris_qt = sys.argv[1]
+
+# Force ouput as UTF-8
+sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout)
+
+# A global has to hold a description on a key file like the UTF-8 char of
+# the file.
+descriptions = {}
 
 def get_intro_from_code():
     '''Return a set for activities as found in GCompris ActivityInfo.qml'''
@@ -65,6 +74,7 @@ def print_intro_description_from_code():
                     m = re.match('.*intro:.*\"(.*)\"', line)
                     if m:
                         print "%-32s %s" %(activity, m.group(1))
+                        descriptions[activity + '.ogg'] = m.group(1)
                         break
         except IOError as e:
             pass
@@ -185,6 +195,7 @@ def get_gletter_alphabet():
             for one_char in w.lower():
                 multiletters += 'U{:04X}'.format(ord(one_char))
             letters.add(multiletters + '.ogg')
+            descriptions[multiletters + '.ogg'] = w.lower()
 
     return letters
 
@@ -200,21 +211,30 @@ def diff_set(title, code, files):
         print ''
         print "These files are correct:"
         for f in code & files:
-            print ' ' + f
+            if descriptions.has_key(f):
+                print ' %-40s %s' %(f, descriptions[f])
+            else:
+                print ' ' + f
         print ''
 
     if code - files:
         print ''
         print "These files are missing:"
         for f in code - files:
-            print ' ' + f
+            if descriptions.has_key(f):
+                print ' %-40s %s' %(f, descriptions[f])
+            else:
+                print ' ' + f
         print ''
 
     if files - code:
         print ''
         print "These files are not needed:"
         for f in files - code:
-            print ' ' + f
+            if descriptions.has_key(f):
+                print ' %-40s %s' %(f, descriptions[f])
+            else:
+                print ' ' + f
         print ''
 
 def diff_locale_set(title, code, files):
