@@ -1,5 +1,28 @@
 #!/usr/bin/python
-
+#
+# GCompris - check_voices.py
+#
+# Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#
+#
+# The output is in markdown. A web page can be generated with:
+# /check_voices.py ../gcompris-kde  | markdown_py -x markdown.extensions.tables -x markdown.extensions.toc | ./check_voices_to_html.sh > voices_stats.html
+#
+# (Requires python-markdown to be installed)
+#
 import os
 import sys
 import re
@@ -8,21 +31,39 @@ from pprint import pprint
 import polib
 import codecs
 import locale
+from datetime import date
 
 if len(sys.argv) < 2:
     print "Usage: check_voices.py [-v] path_to_gcompris"
-    print "  -v: verbose, show also files that are fine"
+    print "  -v:  verbose, show also files that are fine"
+    print "  -nn: not needed, show extra file in the voice directory"
     sys.exit(1)
 
 verbose = '-v' in sys.argv
+notneeded = '-nn' in sys.argv
 gcompris_qt = sys.argv[1]
 
 # Force ouput as UTF-8
-sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout)
+sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 # A global has to hold a description on a key file like the UTF-8 char of
 # the file.
 descriptions = {}
+
+def title1(title):
+    print title
+    print '=' * len(title)
+    print ''
+
+def title2(title):
+    print title
+    print '-' * len(title)
+    print ''
+
+def title3(title):
+    print '### ' + title
+    print ''
+
 
 def get_intro_from_code():
     '''Return a set for activities as found in GCompris ActivityInfo.qml'''
@@ -52,19 +93,16 @@ def get_intro_from_code():
 
     return activity_info
 
-def print_intro_description_from_code():
-    '''Print the intro description as found in GCompris ActivityInfo.qml'''
-
-    title = "Activity Intro description"
-    print ''
-    print title
-    print '-' * len(title)
-    print ''
+def init_intro_description_from_code():
+    '''Init the intro description as found in GCompris ActivityInfo.qml'''
+    '''in the global descriptions hash'''
 
     activity_dir = gcompris_qt + "/src/activities"
     for activity in os.listdir(activity_dir):
         # Skip unrelevant activities
-        if activity == 'template' or not os.path.isdir(activity_dir + "/" + activity):
+        if activity == 'template' or \
+           activity == 'menu' or \
+           not os.path.isdir(activity_dir + "/" + activity):
             continue
 
         try:
@@ -73,9 +111,11 @@ def print_intro_description_from_code():
                 for line in content:
                     m = re.match('.*intro:.*\"(.*)\"', line)
                     if m:
-                        print "%-32s %s" %(activity, m.group(1))
                         descriptions[activity + '.ogg'] = m.group(1)
                         break
+
+            if not descriptions.has_key(activity + '.ogg'):
+                print "**ERROR: Missing intro tag in %s**" %(activity + "/ActivityInfo.qml")
         except IOError as e:
             pass
 
@@ -140,6 +180,12 @@ def get_translation_status_from_po_files():
               len(po.fuzzy_entries()),
               percent ]
 
+        # Save the translation team in the global descriptions
+        if po.metadata.has_key('Language-Team'):
+            descriptions[locale] = po.metadata['Language-Team']
+        else:
+            descriptions[locale] = ''
+
     return locales
 
 def get_words_from_code():
@@ -149,7 +195,7 @@ def get_words_from_code():
             data = json.load(data_file)
     except:
         print ''
-        print "Missing resource file %s" %(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json')
+        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json')
         print ''
         return set()
 
@@ -183,7 +229,7 @@ def get_gletter_alphabet():
             data = json.load(data_file)
     except:
         print ''
-        print "Missing resource file %s" %(gcompris_qt + '/src/activities/gletters/resource/default-' + locale + '.json')
+        print "**ERROR: Missing resource file %s**" %(gcompris_qt + '/src/activities/gletters/resource/default-' + locale + '.json')
         print ''
         return set()
 
@@ -204,37 +250,45 @@ def diff_set(title, code, files):
     if not code and not files:
         return
 
-    print title
-    print '-' * len(title)
+    title2(title)
 
     if verbose and code & files:
-        print ''
-        print "These files are correct:"
-        for f in code & files:
+        title3("These files are correct")
+        print '| File | Description |'
+        print '|------|-------------|'
+        sorted = list(code & files)
+        sorted.sort()
+        for f in sorted:
             if descriptions.has_key(f):
-                print ' %-40s %s' %(f, descriptions[f])
+                print '| %s | %s |' %(f, descriptions[f])
             else:
-                print ' ' + f
+                print '|%s |  |' %(f)
         print ''
 
     if code - files:
-        print ''
-        print "These files are missing:"
-        for f in code - files:
+        title3("These files are missing")
+        print '| File | Description |'
+        print '|------|-------------|'
+        sorted = list(code - files)
+        sorted.sort()
+        for f in sorted:
             if descriptions.has_key(f):
-                print ' %-40s %s' %(f, descriptions[f])
+                print '| %s | %s |' %(f, descriptions[f])
             else:
-                print ' ' + f
+                print '|%s |  |' %(f)
         print ''
 
-    if files - code:
-        print ''
-        print "These files are not needed:"
-        for f in files - code:
+    if notneeded and files - code:
+        title3("These files are not needed")
+        print '| File | Description |'
+        print '|------|-------------|'
+        sorted = list(files - code)
+        sorted.sort()
+        for f in sorted:
             if descriptions.has_key(f):
-                print ' %-40s %s' %(f, descriptions[f])
+                print '|%s | %s|' %(f, descriptions[f])
             else:
-                print ' ' + f
+                print '|%s |  |' %(f)
         print ''
 
 def diff_locale_set(title, code, files):
@@ -242,33 +296,29 @@ def diff_locale_set(title, code, files):
     if not code and not files:
         return
 
-    print title
-    print '-' * len(title)
+    title2(title)
     if verbose:
-        print ''
-        print "We have voices for these locales:"
+        title3("We have voices for these locales:")
         missing = []
         for locale in code:
             if os.path.isdir(locale):
-                print ' ' + locale
+                print '* ' + locale
             else:
                 # Shorten the locale and test again
                 shorten = locale.split('_')
                 if os.path.isdir(shorten[0]):
-                    print ' ' + locale
+                    print '* ' + locale
                 else:
                     missing.append(locale)
     print ''
     print "We miss voices for these locales:"
     for f in missing:
-        print ' ' + f
+        print '* ' + f
     print ''
 
 def check_locale_config(title, stats, locale_config):
     '''Display and return locales that are translated above a fixed threshold'''
-    print title
-    print '-' * len(title)
-    print ''
+    title2(title)
     LIMIT = 0.8
     sorted_config = list(locale_config)
     sorted_config.sort()
@@ -276,7 +326,7 @@ def check_locale_config(title, stats, locale_config):
     for locale in sorted_config:
         if stats.has_key(locale):
             if stats[locale][3] < LIMIT:
-                print "%10s" %(locale)
+                print "* %s" %(locale)
             else:
                 good_locale.append(locale)
         else:
@@ -284,11 +334,11 @@ def check_locale_config(title, stats, locale_config):
             shorten = locale.split('_')[0]
             if stats.has_key(shorten):
                 if stats[shorten][3] < LIMIT:
-                    print "%10s" %(locale)
+                    print "* %s" %(locale)
                 else:
                     good_locale.append(shorten)
             else:
-                print "%10s no translation at all" %(locale)
+                print "* %s no translation at all" %(locale)
 
     print ''
     print 'There is %d locales above %d%% translation: %s' %(len(good_locale), LIMIT * 100,
@@ -296,25 +346,30 @@ def check_locale_config(title, stats, locale_config):
 
     return good_locale
 
+#
+# main
+# ===
+
+print '[TOC]'
+print ''
+
 stats = get_translation_status_from_po_files()
 check_locale_config("Locales to remove from LanguageList.qml (translation level < 80%)",
                     stats, get_locales_from_config())
 
-print_intro_description_from_code()
+init_intro_description_from_code()
 
 # Calc the big list of locales we have to check
 all_locales = get_locales_from_po_files() | get_locales_from_file()
 
 for locale in all_locales:
-    print ''
-    print '==================== %s ====================' %(locale)
-    print ''
+    title1(u'{:s} ({:s})'.format(locale, (descriptions[locale] if descriptions.has_key(locale) else '')))
+
     diff_set("Intro ({:s}/intro/)".format(locale), get_intro_from_code(), get_files(locale, 'intro'))
     diff_set("Letters ({:s}/alphabet/)".format(locale), get_gletter_alphabet(), get_files(locale, 'alphabet'))
     diff_set("Misc ({:s}/misc/)".format(locale), get_files('en', 'misc'), get_files(locale, 'misc'))
     diff_set("Colors ({:s}/colors/)".format(locale), get_files('en', 'colors'), get_files(locale, 'colors'))
     diff_set("Geography ({:s}/geography/)".format(locale), get_files('en', 'geography'), get_files(locale, 'geography'))
     diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
-
 
 
