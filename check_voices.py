@@ -71,6 +71,12 @@ def get_html_footer():
 </body>
 """.format(today.isoformat())
 
+def get_html_progress_bar(rate):
+    return '<td width=200 height=30pt>' + \
+        '<div style="border: 2px solid silver;background-color:#c00"><div style="background-color:#0c0;height:15px;width:{:d}%"></div></div>'.format(int(float(rate) * 100))
+
+# '<hr style="color:#0c0;background-color:#0c0;height:15px; border:none;margin:0;" align="left" width={:d}% /></td>'.format(int(float(rate) * 100))
+
 def title1(title):
     print title
     print '=' * len(title)
@@ -365,7 +371,7 @@ def check_locale_config(title, stats, locale_config):
                 print "* %s no translation at all" %(locale)
 
     print ''
-    print 'There is %d locales above %d%% translation: %s' %(len(good_locale), LIMIT * 100,
+    print 'There are %d locales above %d%% translation: %s' %(len(good_locale), LIMIT * 100,
                                                            ' '.join(good_locale))
 
     return good_locale
@@ -428,7 +434,19 @@ with codecs.open("index.html", "w",
                  errors="xmlcharrefreplace"
              ) as f:
     f.write(get_html_header())
-    f.write(markdown.markdown(reports['summary'].getvalue(), extensions=extensions))
+
+    summary = markdown.markdown(reports['summary'].getvalue(), extensions=extensions)
+    summary2 = ""
+    for line in summary.split('\n'):
+        m = re.match('<td>(\d\.\d\d)</td>', line)
+        if m:
+            rate = m.group(1)
+            summary2 += get_html_progress_bar(rate)
+        else:
+            summary2 += line
+
+    f.write(summary2)
+
     f.write(markdown.markdown(reports['stats'].getvalue(), extensions=extensions))
     f.write(get_html_footer())
 
