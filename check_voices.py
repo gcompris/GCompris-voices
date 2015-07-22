@@ -188,7 +188,10 @@ def get_translation_status_from_po_files():
     ''' [ translated_entries, untranslated_entries, fuzzy_entries, percent ]'''
     '''Run make getSvnTranslations first'''
 
-    locales = {}
+    # en locale has no translation file but mark it 100% done
+    locales = {'en': [0, 0, 0, 1]}
+
+    descriptions['en'] = 'US English'
 
     locales_dir = gcompris_qt + "/po"
     for locale_file in os.listdir(locales_dir):
@@ -209,7 +212,9 @@ def get_translation_status_from_po_files():
 
         # Save the translation team in the global descriptions
         if po.metadata.has_key('Language-Team'):
-            descriptions[locale] = po.metadata['Language-Team']
+            team = po.metadata['Language-Team']
+            team = re.sub(r' <.*>', '', team)
+            descriptions[locale] = team
         else:
             descriptions[locale] = ''
 
@@ -398,7 +403,7 @@ stats = {}
 
 for locale in all_locales:
     sys.stdout = reports[locale] = StringIO()
-    title1(u'{:s} ({:s})'.format(locale, (descriptions[locale] if descriptions.has_key(locale) else '')))
+    title1(u'{:s} ({:s})'.format((descriptions[locale] if descriptions.has_key(locale) else ''), locale))
 
     lstats = {'locale': locale}
     lstats['intro'] = diff_set("Intro ({:s}/intro/)".format(locale), get_intro_from_code(), get_files(locale, 'intro'))
@@ -417,8 +422,9 @@ print '| Locale | Strings | Misc | Letters | Colors | Geography | Words | Intro|
 print '|--------|---------|------|---------|--------|-----------|-------|------|'
 for locale in sorted_keys:
     stat = stats[locale]
-    print '| [{:s}](voice_status_{:s}.html) | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
-        .format(stat['locale'], locale, string_stats[locale][3] if string_stats.has_key(locale) else 0,
+    print u'| [{:s} ({:s})](voice_status_{:s}.html) | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
+        .format((descriptions[locale] if descriptions.has_key(locale) else ''), stat['locale'],
+                locale, string_stats[locale][3] if string_stats.has_key(locale) else 0,
                 stat['misc'], stat['letter'], stat['color'], stat['geography'], stat['words'], stat['intro'])
 
 #
