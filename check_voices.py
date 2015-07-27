@@ -221,13 +221,14 @@ def get_translation_status_from_po_files():
     return locales
 
 def get_words_from_code():
-    '''Return a set for words as found in GCompris content-<locale>.json'''
+    '''Return a set for words as found in GCompris imageid/resource/content-<locale>.json'''
     try:
         with open(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json') as data_file:
             data = json.load(data_file)
     except:
         print ''
         print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json')
+        print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Word_Lists_Qt#Simple_Letters_.28Typing_letters.29_level_design')
         print ''
         return set()
 
@@ -237,6 +238,19 @@ def get_words_from_code():
         words.add(word)
 
     return words
+
+def get_wordsgame_from_code():
+    '''Return nothing but tells if the required GCompris wordsgame/resource/content-<locale>.json is there'''
+
+    if not os.path.isfile(gcompris_qt + '/src/activities/wordsgame/resource/content-' + locale + '.json'):
+        print ''
+        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/wordsgame/resource/content-' + locale + '.json')
+        print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Word_Lists_Qt#Wordsgame_.28Typing_words.29')
+
+        return set()
+
+    # We don't really have voices needs here, just check the file exists
+    return set()
 
 def get_files(locale, voiceset):
     to_remove = set(['README'])
@@ -412,6 +426,7 @@ for locale in all_locales:
     lstats['color'] = diff_set("Colors ({:s}/colors/)".format(locale), get_files('en', 'colors'), get_files(locale, 'colors'))
     lstats['geography'] = diff_set("Geography ({:s}/geography/)".format(locale), get_files('en', 'geography'), get_files(locale, 'geography'))
     lstats['words'] = diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
+    lstats['wordsgame'] = diff_set("Wordsgame", get_wordsgame_from_code(), set())
     stats[locale] = lstats
 
 sys.stdout = reports['summary'] = StringIO()
@@ -425,7 +440,8 @@ for locale in sorted_keys:
     print u'| [{:s} ({:s})](voice_status_{:s}.html) | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
         .format((descriptions[locale] if descriptions.has_key(locale) else ''), stat['locale'],
                 locale, string_stats[locale][3] if string_stats.has_key(locale) else 0,
-                stat['misc'], stat['letter'], stat['color'], stat['geography'], stat['words'], stat['intro'])
+                stat['misc'], stat['letter'], stat['color'], stat['geography'],
+                stat['words'], stat['wordsgame'], stat['intro'])
 
 #
 # Now we have all the reports
