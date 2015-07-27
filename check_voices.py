@@ -26,6 +26,7 @@
 import os
 import sys
 import re
+import copy
 import json
 from pprint import pprint
 import polib
@@ -49,7 +50,7 @@ gcompris_qt = sys.argv[1]
 ref_stdout = sys.stdout
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
-# A global has to hold a description on a key file like the UTF-8 char of
+# A global hash to hold a description on a key file like the UTF-8 char of
 # the file.
 descriptions = {}
 
@@ -228,7 +229,7 @@ def get_words_from_code():
     except:
         print ''
         print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json')
-        print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Word_Lists_Qt#Simple_Letters_.28Typing_letters.29_level_design')
+        print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Voice_translation_Qt#Lang_word_list')
         print ''
         return set()
 
@@ -236,6 +237,7 @@ def get_words_from_code():
     words = set()
     for word in data.keys():
         words.add(word)
+        descriptions[word] = data[word]
 
     return words
 
@@ -276,6 +278,7 @@ def get_gletter_alphabet():
     except:
         print ''
         print "**ERROR: Missing resource file %s**" %(gcompris_qt + '/src/activities/gletters/resource/default-' + locale + '.json')
+        print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Word_Lists_Qt#Simple_Letters_.28Typing_letters.29_level_design')
         print ''
         return set()
 
@@ -406,17 +409,20 @@ string_stats = get_translation_status_from_po_files()
 check_locale_config("Locales to remove from LanguageList.qml (translation level < 80%)",
                     string_stats, get_locales_from_config())
 
-init_intro_description_from_code()
-
 # Calc the big list of locales we have to check
 all_locales = get_locales_from_po_files() | get_locales_from_file()
 all_locales = list(all_locales)
 all_locales.sort()
 
 stats = {}
+global_descriptions = copy.deepcopy(descriptions)
 
 for locale in all_locales:
     sys.stdout = reports[locale] = StringIO()
+
+    descriptions = copy.deepcopy(global_descriptions)
+    init_intro_description_from_code()
+
     title1(u'{:s} ({:s})'.format((descriptions[locale] if descriptions.has_key(locale) else ''), locale))
 
     lstats = {'locale': locale}
