@@ -265,12 +265,25 @@ def get_words_from_code():
     return words
 
 def get_wordsgame_from_code():
-    '''Return nothing but tells if the required GCompris wordsgame/resource/content-<locale>.json is there'''
+    '''Return nothing but tells if the required GCompris wordsgame/resource/default-<locale>.json is there'''
 
-    if not os.path.isfile(gcompris_qt + '/src/activities/wordsgame/resource/content-' + locale + '.json'):
+    if not os.path.isfile(gcompris_qt + '/src/activities/wordsgame/resource/default-' + locale + '.json'):
         print ''
-        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/wordsgame/resource/content-' + locale + '.json')
+        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/wordsgame/resource/default-' + locale + '.json')
         print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Word_Lists_Qt#Wordsgame_.28Typing_words.29')
+
+        return set()
+
+    # We don't really have voices needs here, just check the file exists
+    return set()
+
+def get_click_on_letter_from_code():
+    '''Return nothing but tells if the required GCompris click_on_letter/resource/levels-<locale>.json is there'''
+
+    if not os.path.isfile(gcompris_qt + '/src/activities/click_on_letter/resource/levels-' + locale + '.json'):
+        print ''
+        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/click_on_letter/resource/levels-' + locale + '.json')
+        print '[Instructions to create this file TBD](%s)' %('TBD')
 
         return set()
 
@@ -456,6 +469,7 @@ for locale in all_locales:
     lstats['geography'] = diff_set("Geography ({:s}/geography/)".format(locale), get_files('en', 'geography'), get_files(locale, 'geography'))
     lstats['words'] = diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
     lstats['wordsgame'] = diff_set("Wordsgame", get_wordsgame_from_code(), set())
+    lstats['click_on_letter'] = diff_set("Click on letter", get_click_on_letter_from_code(), set())
     stats[locale] = lstats
 
 sys.stdout = reports['summary'] = StringIO()
