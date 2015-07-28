@@ -35,6 +35,7 @@ import locale
 from StringIO import StringIO
 import markdown
 from datetime import date
+import polib
 
 if len(sys.argv) < 2:
     print "Usage: check_voices.py [-v] path_to_gcompris"
@@ -121,9 +122,15 @@ def get_intro_from_code():
 
     return activity_info
 
-def init_intro_description_from_code():
+def init_intro_description_from_code(locale):
     '''Init the intro description as found in GCompris ActivityInfo.qml'''
     '''in the global descriptions hash'''
+
+    po = None
+    try:
+        po = polib.pofile( gcompris_qt + '/po/gcompris_' + locale + '.po')
+    except:
+        print "**ERROR: Failed to load po file %s**" %(gcompris_qt + '/po/gcompris_' + locale + '.po')
 
     activity_dir = gcompris_qt + "/src/activities"
     for activity in os.listdir(activity_dir):
@@ -133,14 +140,30 @@ def init_intro_description_from_code():
            not os.path.isdir(activity_dir + "/" + activity):
             continue
 
+        descriptions[activity + '.ogg'] = ''
         try:
             with open(activity_dir + "/" + activity + "/ActivityInfo.qml") as f:
                 content = f.readlines()
+
                 for line in content:
+                    m = re.match('.*title:.*\"(.*)\"', line)
+                    if m:
+                        title = m.group(1)
+                        if po:
+                            title = po.find(title).msgstr if po.find(title) else title
+                        descriptions[activity + '.ogg'] += ' title: ' + title
+
+                    m = re.match('.*description:.*\"(.*)\"', line)
+                    if m:
+                        title = m.group(1)
+                        if po:
+                            title = po.find(title).msgstr if po.find(title) else title
+                        descriptions[activity + '.ogg'] += ' description: ' + title
+
                     m = re.match('.*intro:.*\"(.*)\"', line)
                     if m:
-                        descriptions[activity + '.ogg'] = m.group(1)
-                        break
+                        descriptions[activity + '.ogg'] += ' voice: ' + m.group(1)
+
 
             if not descriptions.has_key(activity + '.ogg'):
                 print "**ERROR: Missing intro tag in %s**" %(activity + "/ActivityInfo.qml")
@@ -421,7 +444,7 @@ for locale in all_locales:
     sys.stdout = reports[locale] = StringIO()
 
     descriptions = copy.deepcopy(global_descriptions)
-    init_intro_description_from_code()
+    init_intro_description_from_code(locale)
 
     title1(u'{:s} ({:s})'.format((descriptions[locale] if descriptions.has_key(locale) else ''), locale))
 
