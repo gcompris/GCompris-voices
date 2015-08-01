@@ -37,6 +37,9 @@ import markdown
 from datetime import date
 import polib
 
+from PyQt5.QtCore import pyqtProperty, QCoreApplication, QObject, QUrl
+from PyQt5.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
+
 if len(sys.argv) < 2:
     print "Usage: check_voices.py [-v] path_to_gcompris"
     print "  -v:  verbose, show also files that are fine"
@@ -171,6 +174,33 @@ def init_intro_description_from_code(locale):
             pass
 
     print ''
+
+
+def init_country_names_from_code(locale):
+    '''Init the country description as found in GCompris geography/resource/board/board*.qml'''
+    '''in the global descriptions hash'''
+
+    po = None
+    try:
+        po = polib.pofile( gcompris_qt + '/po/gcompris_' + locale + '.po')
+    except:
+        print "**ERROR: Failed to load po file %s**" %(gcompris_qt + '/po/gcompris_' + locale + '.po')
+
+    app = QCoreApplication(sys.argv)
+    engine = QQmlEngine()
+    component = QQmlComponent(engine)
+
+    for qml in os.listdir(gcompris_qt + '/src/activities/geography/resource/board'):
+        component.loadUrl(QUrl(gcompris_qt + '/src/activities/geography/resource/board/' + qml))
+        board = component.create()
+        levels = board.property('levels')
+        for level in levels.toVariant():
+            if level.has_key('sound') and level.has_key('toolTipText'):
+                sound = level['sound'].split('/')[-1].replace('$CA', 'ogg')
+                tooltip = level['toolTipText']
+                if po:
+                    tooltip = po.find(tooltip).msgstr if po.find(tooltip) else tooltip
+                descriptions[sound] = tooltip
 
 
 def get_locales_from_config():
@@ -458,6 +488,7 @@ for locale in all_locales:
 
     descriptions = copy.deepcopy(global_descriptions)
     init_intro_description_from_code(locale)
+    init_country_names_from_code(locale)
 
     title1(u'{:s} ({:s})'.format((descriptions[locale] if descriptions.has_key(locale) else ''), locale))
 
