@@ -290,7 +290,7 @@ def get_words_from_code():
     words = set()
     for word in data.keys():
         words.add(word)
-        descriptions[word] = data[word]
+        descriptions[word] = u'[{:s}](http://gcompris.net/incoming/lang/words.html#{:s})'.format(data[word], word.replace('.ogg', ''))
 
     return words
 
