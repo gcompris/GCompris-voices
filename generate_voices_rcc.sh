@@ -84,7 +84,7 @@ VOICE_DIR="voices-${CA}"
 rm -rf ${VOICE_DIR}
 mkdir -p ${VOICE_DIR}
 
-for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{2,3}(_[A-Z]{2,3})?"`; do
+for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{2,3}(_[A-Z]{2,3})?" | sort`; do
     QRC_FILE="${QRC_DIR}/voices-${LANG#./}.qrc"
     RCC_FILE="${RCC_DIR}/${VOICE_DIR}/voices-${LANG#./}.rcc"
 
@@ -100,7 +100,7 @@ for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{
     [ -e ${QRC_FILE} ] && rm ${QRC_FILE}
 
     header_rcc $QRC_FILE
-    for i in `find ${LANG} -not -type d`; do
+    for i in `find ${LANG} -not -type d | sort`; do
 	# For the lang file
         echo "    <file>${VOICE_DIR}/${i#./}</file>" >> $QRC_FILE
 	# For the all lang file
@@ -112,7 +112,7 @@ for LANG in `find . -maxdepth 1 -regextype posix-egrep -type d -regex "\./[a-z]{
 done
 
 # Word images for the full qrc
-for i in `find words/ -not -type d`; do
+for i in `find words/ -not -type d | sort`; do
     echo "    <file>${i#${WORDS_DIR}}</file>" >> $QRC_FULL_FILE
 done
 
@@ -128,7 +128,7 @@ generate_rcc ${QRC_FULL_FILE} ${RCC_FULL_FILE}
 if [[ $CA == ogg ]]
 then
     header_rcc "${QRC_DIR}/words.qrc"
-    for i in `find words/ -not -type d`; do
+    for i in `find words/ -not -type d | sort`; do
 	echo "    <file>${i#${WORDS_DIR}}</file>" >> "${QRC_DIR}/words.qrc"
     done
     footer_rcc "${QRC_DIR}/words.qrc"
