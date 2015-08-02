@@ -6,7 +6,7 @@
 # cd /opt/gcompris
 # ./updateVoices.sh
 #
-export Qt5_DIR=/usr/lib/x86_64-linux-gnu/qt5
+export RCC=/usr/bin/rcc
 
 echo "Update gcompris-gtk just in case"
 cd gcompris-gtk
