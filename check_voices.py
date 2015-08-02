@@ -186,6 +186,7 @@ def init_country_names_from_code(locale):
         po = polib.pofile( gcompris_qt + '/po/gcompris_' + locale + '.po')
     except:
         print "**ERROR: Failed to load po file %s**" %(gcompris_qt + '/po/gcompris_' + locale + '.po')
+        print ''
 
     app = QCoreApplication(sys.argv)
     engine = QQmlEngine()
@@ -291,7 +292,7 @@ def get_words_from_code():
     words = set()
     for word in data.keys():
         # Skip alphabet letter, they are already handled by the alphabet set
-        if word[0] == 'U':
+        if word[0] == 'U' or word[0] == '1':
             continue
         words.add(word)
         descriptions[word] = u'[{:s}](http://gcompris.net/incoming/lang/words.html#{:s})'.format(data[word], word.replace('.ogg', ''))
@@ -361,6 +362,10 @@ def get_gletter_alphabet():
                 multiletters += 'U{:04X}'.format(ord(one_char))
             letters.add(multiletters + '.ogg')
             descriptions[multiletters + '.ogg'] = w.lower()
+
+    # Add numbers needed for words
+    for i in range(10, 21):
+        letters.add(str(i) + '.ogg')
 
     return letters
 
