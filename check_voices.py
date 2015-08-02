@@ -512,10 +512,10 @@ print '|--------|---------|------|---------|--------|-----------|-------|------|
 for locale in sorted_keys:
     stat = stats[locale]
     print u'| [{:s} ({:s})](voice_status_{:s}.html) | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |' \
-        .format((descriptions[locale] if descriptions.has_key(locale) else ''), stat['locale'],
-                locale, string_stats[locale][3] if string_stats.has_key(locale) else 0,
+        .format((descriptions[locale] if descriptions.has_key(locale) else ''), stat['locale'], locale,
+                string_stats[locale][3] if string_stats.has_key(locale) else 0,
                 stat['misc'], stat['letter'], stat['color'], stat['geography'],
-                stat['words'], stat['wordsgame'], stat['intro'])
+                stat['words'], stat['intro'])
 
 #
 # Now we have all the reports
@@ -541,7 +541,9 @@ with codecs.open("index.html", "w",
         else:
             summary2 += line
 
-    f.write(summary2)
+        summary2 += '\n'
+
+    f.write(summary2 + '\n')
 
     f.write(markdown.markdown(reports['stats'].getvalue(), extensions=extensions))
     f.write(get_html_footer())
