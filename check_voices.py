@@ -134,6 +134,7 @@ def init_intro_description_from_code(locale):
         po = polib.pofile( gcompris_qt + '/po/gcompris_' + locale + '.po')
     except:
         print "**ERROR: Failed to load po file %s**" %(gcompris_qt + '/po/gcompris_' + locale + '.po')
+        print ''
 
     activity_dir = gcompris_qt + "/src/activities"
     for activity in os.listdir(activity_dir):
