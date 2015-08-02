@@ -290,6 +290,9 @@ def get_words_from_code():
     # Consolidate letters
     words = set()
     for word in data.keys():
+        # Skip alphabet letter, they are already handled by the alphabet set
+        if word[0] == 'U':
+            continue
         words.add(word)
         descriptions[word] = u'[{:s}](http://gcompris.net/incoming/lang/words.html#{:s})'.format(data[word], word.replace('.ogg', ''))
 
