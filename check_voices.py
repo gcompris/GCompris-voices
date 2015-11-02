@@ -277,13 +277,13 @@ def get_translation_status_from_po_files():
     return locales
 
 def get_words_from_code():
-    '''Return a set for words as found in GCompris imageid/resource/content-<locale>.json'''
+    '''Return a set for words as found in GCompris lang/resource/content-<locale>.json'''
     try:
-        with open(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json') as data_file:
+        with open(gcompris_qt + '/src/activities/lang/resource/content-' + locale + '.json') as data_file:
             data = json.load(data_file)
     except:
         print ''
-        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/imageid/resource/content-' + locale + '.json')
+        print "**ERROR: missing resource file %s**" %(gcompris_qt + '/src/activities/lang/resource/content-' + locale + '.json')
         print '[Instructions to create this file](%s)' %('http://gcompris.net/wiki/Voice_translation_Qt#Lang_word_list')
         print ''
         return set()
