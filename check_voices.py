@@ -453,23 +453,24 @@ def check_locale_config(title, stats, locale_config):
     for locale in sorted_config:
         if stats.has_key(locale):
             if stats[locale][3] < LIMIT:
-                print "* %s" %(locale)
+                print u'* {:s} ({:s})'.format((descriptions[locale] if descriptions.has_key(locale) else ''), locale)
             else:
-                good_locale.append(locale)
+                good_locale.append((descriptions[locale] if descriptions.has_key(locale) else ''))
         else:
             # Shorten the locale and test again
             shorten = locale.split('_')[0]
             if stats.has_key(shorten):
                 if stats[shorten][3] < LIMIT:
-                    print "* %s" %(locale)
+                    print u'* {:s} ({:s})'.format((descriptions[shorten] if descriptions.has_key(shorten) else ''), shorten)
                 else:
-                    good_locale.append(shorten)
+                    good_locale.append(descriptions[shorten] if descriptions.has_key(shorten) else '')
             else:
                 print "* %s no translation at all" %(locale)
 
     print ''
+    good_locale.sort()
     print 'There are %d locales above %d%% translation: %s' %(len(good_locale), LIMIT * 100,
-                                                           ' '.join(good_locale))
+                                                              ', '.join(good_locale))
 
     return good_locale
 
