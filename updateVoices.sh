@@ -17,26 +17,33 @@ echo "Generate ogg rcc"
 cd ../voices/ogg
 git pull
 ./generate_voices_rcc.sh ogg ../../gcompris-gtk/src/lang-activity/resources/lang/words
-
-echo "Create the aac directory"
 cd ..
-rm -rf aac
-rsync -a --exclude .git ogg/ aac
-cd aac
 
-echo "Encoding aac files"
-./encodeTo.sh aac
+function generateEncodedVoices {
+    codec=$1
+    echo "Create the $codec directory"
+    rm -rf $codec
+    rsync -a --exclude .git --exclude voices-ogg ogg/ $codec
+    cd $codec
 
-echo "Generate aac rcc"
-./generate_voices_rcc.sh aac ../../gcompris-gtk/src/lang-activity/resources/lang/words
+    echo "Encoding $codec files"
+    ./encodeTo.sh $codec
 
-echo "Consolidate the top level Content file"
-cat .rcc/Contents >> ../ogg/.rcc/Contents
-rm .rcc/Contents
+    echo "Generate $codec rcc"
+    ./generate_voices_rcc.sh $codec ../../gcompris-gtk/src/lang-activity/resources/lang/words
 
-echo "Update aac on gcompris.net"
-rsync -avx .rcc/ /var/www/data2/
+    echo "Consolidate the top level Content file"
+    cat .rcc/Contents >> ../ogg/.rcc/Contents
+    rm .rcc/Contents
+
+    echo "Update $codec on gcompris.net"
+#    rsync -avx .rcc/ /var/www/data2/
+    cd ..
+}
+
+generateEncodedVoices aac
+generateEncodedVoices mp3
 
 echo "Update ogg on gcompris.net"
-cd ../ogg
-rsync -avx .rcc/ /var/www/data2/
+cd ogg
+#rsync -avx .rcc/ /var/www/data2/
