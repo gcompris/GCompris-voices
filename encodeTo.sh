@@ -42,8 +42,6 @@ do
     if [ $? -ne 0 ]
     then
        echo "ERROR: Failed to convert $f"
-       echo "Cancelled"
-       exit 1
     fi
     rm -f $f
 done
