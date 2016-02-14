@@ -37,7 +37,7 @@ function generateEncodedVoices {
     rm .rcc/Contents
 
     echo "Update $codec on gcompris.net"
-#    rsync -avx .rcc/ /var/www/data2/
+    rsync -avx .rcc/ /var/www/data2/
     cd ..
 }
 
@@ -46,4 +46,4 @@ generateEncodedVoices mp3
 
 echo "Update ogg on gcompris.net"
 cd ogg
-#rsync -avx .rcc/ /var/www/data2/
+rsync -avx .rcc/ /var/www/data2/
