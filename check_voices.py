@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # GCompris - check_voices.py
 #
@@ -197,8 +197,8 @@ def init_country_names_from_code(locale):
         board = component.create()
         levels = board.property('levels')
         for level in levels.toVariant():
-            if level.has_key('sound') and level.has_key('toolTipText'):
-                sound = level['sound'].split('/')[-1].replace('$CA', 'ogg')
+            if level.has_key('soundFile') and level.has_key('toolTipText'):
+                sound = level['soundFile'].split('/')[-1].replace('$CA', 'ogg')
                 tooltip = level['toolTipText']
                 if po:
                     tooltip = po.find(tooltip).msgstr if po.find(tooltip) else tooltip
@@ -324,6 +324,23 @@ def get_click_on_letter_from_code():
 
     # We don't really have voices needs here, just check the file exists
     return set()
+
+def get_geography_on_letter_from_code():
+    '''Return all the countries in geography/resource/board/board-x.json'''
+    words = set()
+    
+    app = QCoreApplication(sys.argv)
+    engine = QQmlEngine()
+    component = QQmlComponent(engine)
+    for qml in os.listdir(gcompris_qt + '/src/activities/geography/resource/board'):
+        component.loadUrl(QUrl(gcompris_qt + '/src/activities/geography/resource/board/' + qml))
+        board = component.create()
+        levels = board.property('levels')
+        for level in levels.toVariant():
+            if level.has_key('soundFile'):
+                sound = level['soundFile'].split('/')[-1].replace('$CA', 'ogg')
+                words.add(sound)
+    return words
 
 def get_files(locale, voiceset):
     to_remove = set(['README'])
@@ -510,7 +527,7 @@ for locale in all_locales:
     lstats['misc'] = diff_set("Misc ({:s}/misc/)".format(locale), get_files('en', 'misc'), get_files(locale, 'misc'))
 
     lstats['color'] = diff_set("Colors ({:s}/colors/)".format(locale), get_files('en', 'colors'), get_files(locale, 'colors'))
-    lstats['geography'] = diff_set("Geography ({:s}/geography/)".format(locale), get_files('en', 'geography'), get_files(locale, 'geography'))
+    lstats['geography'] = diff_set("Geography ({:s}/geography/)".format(locale), get_geography_on_letter_from_code(), get_files(locale, 'geography'))
     lstats['words'] = diff_set("Words ({:s}/words/)".format(locale), get_words_from_code(), get_files(locale, 'words'))
     lstats['wordsgame'] = diff_set("Wordsgame", get_wordsgame_from_code(), set())
     lstats['click_on_letter'] = diff_set("Click on letter", get_click_on_letter_from_code(), set())
