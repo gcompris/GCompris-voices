@@ -374,27 +374,27 @@ grave.ogg:lápide
 home.ogg:lar
 hut.ogg:oca
 lane.ogg:pista
-# pool.ogg:piscina
-# ramp.ogg:rampa
-# roof.ogg:telhado
-# school.ogg:escola
-# shed.ogg:celeiro
-# shop.ogg:loja
+pool.ogg:piscina
+ramp.ogg:rampa
+roof.ogg:telhado
+school.ogg:escola
+shed.ogg:celeiro
+shop.ogg:loja
 # stage.ogg:palco
-# store.ogg:mercearia
-# street.ogg:rua
-# strawberry.ogg:morango
-# bath.ogg:banheira
-# bed.ogg:cama
-# bench.ogg:banco
-# chair.ogg:cadeira
-# chest.ogg:baú
-# couch.ogg:sofá
-# crib.ogg:berço
-# desk.ogg:escrivaninha
-# fan.ogg:ventilador
-# lamp.ogg:abajur
-# light.ogg:luz
+store.ogg:mercearia
+street.ogg:rua
+strawberry.ogg:morango
+bath.ogg:banheira
+bed.ogg:cama
+bench.ogg:banco
+chair.ogg:cadeira
+chest.ogg:baú
+couch.ogg:sofá
+crib.ogg:berço
+desk.ogg:escrivaninha
+fan.ogg:ventilador
+lamp.ogg:abajur
+light.ogg:luz
 # mat.ogg:capacho
 # quilt.ogg:colcha
 # rug.ogg:tapete
@@ -431,18 +431,18 @@ lane.ogg:pista
 # block.ogg:bloco
 # board.ogg:placa
 # bomb.ogg:bomba
-# book.ogg:livro
-# box.ogg:caixa
-# candle.ogg:vela
-# cane.ogg:bengala
-# card.ogg:cartão
-# cart.ogg:carrinho
-# cash.ogg:dinheiro
-# chalk.ogg:giz
-# clay.ogg:argila
-# cloth.ogg:tecido
-# coin.ogg:moeda
-# comb.ogg:pente
+book.ogg:livro
+box.ogg:caixa
+candle.ogg:vela
+cane.ogg:bengala
+card.ogg:cartão
+cart.ogg:carrinho
+cash.ogg:dinheiro
+chalk.ogg:giz
+clay.ogg:argila
+cloth.ogg:tecido
+coin.ogg:moeda
+comb.ogg:pente
 # cone.ogg:cone
 # crown.ogg:coroa
 # cube.ogg:cubo
@@ -454,7 +454,7 @@ lane.ogg:pista
 # glue.ogg:cola
 # hook.ogg:gancho
 # hose.ogg:mangueira
-# ink.ogg:tinta
+ink.ogg:tinta
 # jewel.ogg:jóia
 # kite.ogg:pipa
 # knot.ogg:nó
@@ -483,96 +483,96 @@ lane.ogg:pista
 # straw.ogg:canudo
 # string.ogg:fio
 # tag.ogg:etiqueta
-# thread.ogg:linha
-# torch.ogg:tocha
-# towel.ogg:toalha
-# toy.ogg:brinquedo
-# trap.ogg:ratoeira
-# tube.ogg:batom
-# watch.ogg:relógio
-# wheel.ogg:roda
-# wig.ogg:peruca
-# wood.ogg:madeira
-# link.ogg:argola
-# dirty.ogg:sujo
-# throw.ogg:arremessar
-# brick.ogg:tijolo
-# brush.ogg:pincel
-# flash.ogg:lanterna
-# rake.ogg:ciscador
-# screw.ogg:parafuso
-# spear.ogg:lança
-# tool.ogg:ferramenta
-# wedge.ogg:cunha
-# wrench.ogg:chave inglesa
-# bike.ogg:bicicleta
-# boat.ogg:barco
-# canoe.ogg:canoa
-# car.ogg:carro
-# plane.ogg:avião
-# sail.ogg:veleiro
-# ship.ogg:barco
-# sled.ogg:trenó
-# train.ogg:trem
-# truck.ogg:caminhão
-# black.ogg:preta
-# blue.ogg:azul
-# brown.ogg:marrom
-# color.ogg:cor
-# gray.ogg:cinza
-# green.ogg:verde
-# orange-color.ogg:laranja
-# pink.ogg:rosa
-# red.ogg:vermelha
-# white.ogg:branca
+thread.ogg:linha
+torch.ogg:tocha
+towel.ogg:toalha
+toy.ogg:brinquedo
+trap.ogg:ratoeira
+tube.ogg:batom
+watch.ogg:relógio
+wheel.ogg:roda
+wig.ogg:peruca
+wood.ogg:madeira
+link.ogg:argola
+dirty.ogg:sujo
+throw.ogg:arremessar
+brick.ogg:tijolo
+brush.ogg:pincel
+flash.ogg:lanterna
+rake.ogg:ciscador
+screw.ogg:parafuso
+spear.ogg:lança
+tool.ogg:ferramenta
+wedge.ogg:cunha
+wrench.ogg:chave inglesa
+bike.ogg:bicicleta
+boat.ogg:barco
+canoe.ogg:canoa
+car.ogg:carro
+plane.ogg:avião
+sail.ogg:veleiro
+ship.ogg:navio
+sled.ogg:trenó
+train.ogg:trem
+truck.ogg:caminhão
+black.ogg:preta
+blue.ogg:azul
+brown.ogg:marrom
+color.ogg:cor
+gray.ogg:cinza
+green.ogg:verde
+orange-color.ogg:laranja
+pink.ogg:rosa
+red.ogg:vermelha
+white.ogg:branca
 # five.ogg:cinco
 # one.ogg:um
 # ten.ogg:dez
 # three.ogg:três
 # two.ogg:dois
-# van.ogg:van
-# big.ogg:grande
-# blind.ogg:cego
-# blond.ogg:loira
-# bright.ogg:brilhante
-# crazy.ogg:doido
-# cute.ogg:fofa
+van.ogg:van
+big.ogg:grande
+blind.ogg:cego
+blond.ogg:loira
+bright.ogg:brilhante
+crazy.ogg:doido
+cute.ogg:fofa
 # dark.ogg:negra
-# dot.ogg:ponto
-# empty.ogg:vazia
-# fat.ogg:gordo
-# flat.ogg:achatado
-# front.ogg:frente
-# full.ogg:cheio
-# giant.ogg:gigante
-# happy.ogg:feliz
-# high.ogg:alto
-# hot.ogg:quente
-# huge.ogg:enorme
-# left.ogg:esquerdo
-# line.ogg:listrado
-# liquid.ogg:líquido
-# magic.ogg:mágica
-# on.ogg:sobre
-# pretty.ogg:bonita
-# right.ogg:direita
-# round.ogg:redondo
-# royal.ogg:real
-# shut.ogg:fechado
-# sick.ogg:doente
-# small.ogg:pequeno
-# spot.ogg:manchado
-# square.ogg:quadrado
-# stand.ogg:de pé
-# straight.ogg:reto
-# stripe.ogg:listrado
-# strong.ogg:forte
-# tall.ogg:alto
-# thick.ogg:grosso
-# tired.ogg:cansado
-# under.ogg:embaixo
-# wet.ogg:encharcado
-# wheat.ogg:trigo
+dot.ogg:ponto
+empty.ogg:vazia
+fat.ogg:gordo
+flat.ogg:achatado
+front.ogg:frente
+full.ogg:cheio
+giant.ogg:gigante
+happy.ogg:feliz
+high.ogg:alto
+hot.ogg:quente
+huge.ogg:enorme
+left.ogg:esquerdo
+line.ogg:listrado
+liquid.ogg:líquido
+magic.ogg:mágica
+on.ogg:sobre
+pretty.ogg:bonita
+right.ogg:direita
+round.ogg:redondo
+royal.ogg:real
+shut.ogg:fechado
+sick.ogg:doente
+small.ogg:pequeno
+spot.ogg:manchado
+square.ogg:quadrado
+stand.ogg:de pé
+straight.ogg:reto
+stripe.ogg:listrado
+strong.ogg:forte
+tall.ogg:alto
+thick.ogg:grosso
+tired.ogg:cansado
+under.ogg:embaixo
+wet.ogg:encharcado
+wheat.ogg:trigo
 # # Little ack, these are in voice/alphabet
 U0030.ogg:zero
 U0031.ogg:um
