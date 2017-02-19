@@ -36,6 +36,7 @@ from StringIO import StringIO
 import markdown
 from datetime import date
 import polib
+import glob
 
 from PyQt5.QtCore import pyqtProperty, QCoreApplication, QObject, QUrl
 from PyQt5.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
@@ -192,8 +193,8 @@ def init_country_names_from_code(locale):
     engine = QQmlEngine()
     component = QQmlComponent(engine)
 
-    for qml in os.listdir(gcompris_qt + '/src/activities/geography/resource/board'):
-        component.loadUrl(QUrl(gcompris_qt + '/src/activities/geography/resource/board/' + qml))
+    for qml in glob.glob(gcompris_qt + '/src/activities/geography/resource/board/*.qml'):
+        component.loadUrl(QUrl(qml))
         board = component.create()
         levels = board.property('levels')
         for level in levels.toVariant():
@@ -332,12 +333,12 @@ def get_geography_on_letter_from_code():
     app = QCoreApplication(sys.argv)
     engine = QQmlEngine()
     component = QQmlComponent(engine)
-    for qml in os.listdir(gcompris_qt + '/src/activities/geography/resource/board'):
-        component.loadUrl(QUrl(gcompris_qt + '/src/activities/geography/resource/board/' + qml))
+    for qml in glob.glob(gcompris_qt + '/src/activities/geography/resource/board/*.qml'):
+        component.loadUrl(QUrl(qml))
         board = component.create()
         levels = board.property('levels')
         for level in levels.toVariant():
-            if level.has_key('soundFile'):
+            if level.has_key('soundFile') and (not level.has_key('type') or level['type'] != "SHAPE_BACKGROUND"):
                 sound = level['soundFile'].split('/')[-1].replace('$CA', 'ogg')
                 words.add(sound)
     return words
