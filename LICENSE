@@ -908,7 +908,6 @@ crane.ogg  Antoni Bella Pérez 2015 / GPL
 details.ogg  Antoni Bella Pérez 2015 / GPL
 doubleentry.ogg  Antoni Bella Pérez 2015 / GPL
 draw.ogg  Antoni Bella Pérez 2015 / GPL
-drawnumber.ogg  Antoni Bella Pérez 2015 / GPL
 electric.ogg  Antoni Bella Pérez 2015 / GPL
 enumerate.ogg  Antoni Bella Pérez 2015 / GPL
 erase.ogg  Antoni Bella Pérez 2015 / GPL
@@ -937,7 +936,7 @@ imagename.ogg  Antoni Bella Pérez 2015 / GPL
 instruments.ogg  Antoni Bella Pérez 2015 / GPL
 intro_gravity.ogg  Antoni Bella Pérez 2015 / GPL
 land_safe.ogg  Antoni Bella Pérez 2015 / GPL
-lang-nature.ogg  Antoni Bella Pérez 2015 / GPL
+lang.ogg  Antoni Bella Pérez 2015 / GPL
 leftright.ogg  Antoni Bella Pérez 2015 / GPL
 lightsoff.ogg  Antoni Bella Pérez 2015 / GPL
 louis-braille.ogg  Antoni Bella Pérez 2015 / GPL
@@ -963,6 +962,7 @@ money_back.ogg  Antoni Bella Pérez 2015 / GPL
 mosaic.ogg  Antoni Bella Pérez 2015 / GPL
 movelearn.ogg  Antoni Bella Pérez 2015 / GPL
 note_names.ogg  Antoni Bella Pérez 2015 / GPL
+number_sequence.ogg  Antoni Bella Pérez 2015 / GPL
 paintings.ogg  Antoni Bella Pérez 2015 / GPL
 paratrooper.ogg  Antoni Bella Pérez 2015 / GPL
 penalty.ogg  Antoni Bella Pérez 2015 / GPL
@@ -3322,7 +3322,6 @@ crane.ogg  Julia Wycherley / GPL 3+
 details.ogg  Julia Wycherley / GPL 3+
 doubleentry.ogg  Julia Wycherley / GPL 3+
 draw.ogg  Julia Wycherley / GPL 3+
-drawnumber.ogg  Julia Wycherley / GPL 3+
 electric.ogg  Julia Wycherley / GPL 3+
 enumerate.ogg  Julia Wycherley / GPL 3+
 erase.ogg  Julia Wycherley / GPL 3+
@@ -3353,10 +3352,7 @@ imagename.ogg  Julia Wycherley / GPL 3+
 instruments.ogg  Julia Wycherley / GPL 3+
 intro_gravity.ogg  Julia Wycherley / GPL 3+
 land_safe.ogg  Julia Wycherley / GPL 3+
-lang-nature.ogg  Julia Wycherley / GPL 3+
-lang-object.ogg  Julia Wycherley / GPL 3+
-lang-other.ogg  Julia Wycherley / GPL 3+
-lang-people.ogg  Julia Wycherley / GPL 3+
+lang.ogg  Julia Wycherley / GPL 3+
 leftright.ogg  Julia Wycherley / GPL 3+
 lightsoff.ogg  Julia Wycherley / GPL 3+
 louis-braille.ogg  Julia Wycherley / GPL 3+
@@ -3396,6 +3392,7 @@ money_cents.ogg  Julia Wycherley / GPL 3+
 mosaic.ogg  Julia Wycherley / GPL 3+
 movelearn.ogg  Julia Wycherley / GPL 3+
 note_names.ogg  Julia Wycherley / GPL 3+
+number_sequence.ogg  Julia Wycherley / GPL 3+
 paintings.ogg  Julia Wycherley / GPL 3+
 paratrooper.ogg  Julia Wycherley / GPL 3+
 penalty.ogg  Julia Wycherley / GPL 3+
@@ -5640,7 +5637,6 @@ crane.ogg  Zohra Coudoin 2015 / GPL V3+
 details.ogg  Zohra Coudoin 2015 / GPL V3+
 doubleentry.ogg  Zohra Coudoin 2015 / GPL V3+
 draw.ogg  Zohra Coudoin 2015 / GPL V3+
-drawnumber.ogg  Zohra Coudoin 2015 / GPL V3+
 electric.ogg  Zohra Coudoin 2015 / GPL V3+
 enumerate.ogg  Zohra Coudoin 2015 / GPL V3+
 erase.ogg  Zohra Coudoin 2015 / GPL V3+
@@ -5673,10 +5669,7 @@ imagename.ogg  Zohra Coudoin 2015 / GPL V3+
 instruments.ogg  Zohra Coudoin 2015 / GPL V3+
 intro_gravity.ogg  Zohra Coudoin 2015 / GPL V3+
 land_safe.ogg  Zohra Coudoin 2015 / GPL V3+
-lang-nature.ogg  Zohra Coudoin 2015 / GPL V3+
-lang-object.ogg  Zohra Coudoin 2015 / GPL V3+
-lang-other.ogg  Zohra Coudoin 2015 / GPL V3+
-lang-people.ogg  Zohra Coudoin 2015 / GPL V3+
+lang.ogg  Zohra Coudoin 2015 / GPL V3+
 leftright.ogg  Zohra Coudoin 2015 / GPL V3+
 lightsoff.ogg  Zohra Coudoin 2015 / GPL V3+
 louis-braille.ogg  Zohra Coudoin 2015 / GPL V3+
@@ -5715,6 +5708,7 @@ money_back_cents.ogg  Zohra Coudoin 2015 / GPL V3+
 money_cents.ogg  Zohra Coudoin 2015 / GPL V3+
 mosaic.ogg  Zohra Coudoin 2015 / GPL V3+
 note_names.ogg  Zohra Coudoin 2015 / GPL V3+
+number_sequence.ogg  Zohra Coudoin 2015 / GPL V3+
 numbers-odd-even.ogg  Zohra Coudoin 2015 / GPL V3+
 paintings.ogg  Zohra Coudoin 2015 / GPL V3+
 paratrooper.ogg  Zohra Coudoin 2015 / GPL V3+
@@ -7193,7 +7187,6 @@ crane.ogg  Public Domain
 details.ogg  Public Domain
 doubleentry.ogg  Public Domain
 draw.ogg  Public Domain
-drawnumber.ogg  Public Domain
 electric.ogg  Public Domain
 enumerate.ogg  Public Domain
 erase.ogg  Public Domain
@@ -7225,10 +7218,7 @@ imagename.ogg  Public Domain
 instruments.ogg  Public Domain
 intro_gravity.ogg  Public Domain
 land_safe.ogg  Public Domain
-lang-nature.ogg  Public Domain
-lang-object.ogg  Public Domain
-lang-other.ogg  Public Domain
-lang-people.ogg  Public Domain
+lang.ogg  Public Domain
 leftright.ogg  Public Domain
 lightsoff.ogg  Public Domain
 louis-braille.ogg  Public Domain
@@ -7268,6 +7258,7 @@ money_cents.ogg  Public Domain
 mosaic.ogg  Public Domain
 movelearn.ogg  Public Domain
 note_names.ogg  Public Domain
+number_sequence.ogg  Public Domain
 paintings.ogg  Public Domain
 paratrooper.ogg  Public Domain
 penalty.ogg  Public Domain
@@ -8470,7 +8461,6 @@ crane.ogg  somlai / GPL V3+
 details.ogg  somlai / GPL V3+
 doubleentry.ogg  somlai / GPL V3+
 draw.ogg  somlai / GPL V3+
-drawnumber.ogg  somlai / GPL V3+
 electric.ogg  somlai / GPL V3+
 enumerate.ogg  somlai / GPL V3+
 erase.ogg  somlai / GPL V3+
@@ -8521,6 +8511,7 @@ money_back.ogg  somlai / GPL V3+
 money_back_cents.ogg  somlai / GPL V3+
 mosaic.ogg  somlai / GPL V3+
 movelearn.ogg  somlai / GPL V3+
+number_sequence.ogg  somlai / GPL V3+
 paintings.ogg  somlai / GPL V3+
 paratrooper.ogg  somlai / GPL V3+
 penalty.ogg  somlai / GPL V3+
@@ -8922,7 +8913,6 @@ crane.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 details.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 doubleentry.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 draw.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
-drawnumber.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 electric.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 enumerate.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 erase.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
@@ -8953,10 +8943,7 @@ imagename.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 instruments.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 intro_gravity.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 land_safe.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
-lang-nature.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
-lang-object.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
-lang-other.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
-lang-people.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
+lang.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 leftright.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 lightsoff.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 louis-braille.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
@@ -8996,6 +8983,7 @@ money_cents.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 mosaic.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 movelearn.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 note_names.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
+number_sequence.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 paintings.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 paratrooper.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
 penalty.ogg  shambuk_rajeshwarimk 2014 / GPL V3+
@@ -10477,7 +10465,6 @@ clockgame.ogg  IFILP-TEC 2009 / GPL V3+
 colors.ogg  IFILP-TEC 2009 / GPL V3+
 crane.ogg  IFILP-TEC 2009 / GPL V3+
 doubleentry.ogg  IFILP-TEC 2009 / GPL V3+
-drawnumber.ogg  IFILP-TEC 2009 / GPL V3+
 enumerate.ogg  IFILP-TEC 2009 / GPL V3+
 erase.ogg  IFILP-TEC 2009 / GPL V3+
 erase_clic.ogg  IFILP-TEC 2009 / GPL V3+
@@ -10519,6 +10506,7 @@ missing-letter.ogg  IFILP-TEC 2009 / GPL V3+
 money.ogg  IFILP-TEC 2009 / GPL V3+
 money_cents.ogg  IFILP-TEC 2009 / GPL V3+
 mosaic.ogg  IFILP-TEC 2009 / GPL V3+
+number_sequence.ogg  IFILP-TEC 2009 / GPL V3+
 paintings.ogg  IFILP-TEC 2009 / GPL V3+
 railroad.ogg  IFILP-TEC 2009 / GPL V3+
 read_colors.ogg  IFILP-TEC 2009 / GPL V3+
@@ -10739,7 +10727,6 @@ crane.ogg  Enrico Nicoletto (2013) / GPLv3+
 details.ogg  Enrico Nicoletto (2013) / GPLv3+
 doubleentry.ogg  Enrico Nicoletto (2013) / GPLv3+
 draw.ogg  Enrico Nicoletto (2013) / GPLv3+
-drawnumber.ogg  Enrico Nicoletto (2013) / GPLv3+
 electric.ogg  Enrico Nicoletto (2013) / GPLv3+
 enumerate.ogg  Enrico Nicoletto (2013) / GPLv3+
 erase.ogg  Enrico Nicoletto (2013) / GPLv3+
@@ -10768,10 +10755,7 @@ imagename.ogg  Enrico Nicoletto (2013) / GPLv3+
 instruments.ogg  Enrico Nicoletto (2013) / GPLv3+
 intro_gravity.ogg  Enrico Nicoletto (2013) / GPLv3+
 land_safe.ogg  Enrico Nicoletto (2013) / GPLv3+
-lang-nature.ogg  Enrico Nicoletto (2013) / GPLv3+
-lang-object.ogg  Enrico Nicoletto (2013) / GPLv3+
-lang-other.ogg  Enrico Nicoletto (2013) / GPLv3+
-lang-people.ogg  Enrico Nicoletto (2013) / GPLv3+
+lang.ogg  Enrico Nicoletto (2013) / GPLv3+
 leftright.ogg  Enrico Nicoletto (2013) / GPLv3+
 lightsoff.ogg  Enrico Nicoletto (2013) / GPLv3+
 louis-braille.ogg  Enrico Nicoletto (2013) / GPLv3+
@@ -10811,6 +10795,7 @@ money_cents.ogg  Enrico Nicoletto (2013) / GPLv3+
 mosaic.ogg  Enrico Nicoletto (2013) / GPLv3+
 movelearn.ogg  Enrico Nicoletto (2013) / GPLv3+
 note_names.ogg  Enrico Nicoletto (2013) / GPLv3+
+number_sequence.ogg  Enrico Nicoletto (2013) / GPLv3+
 paintings.ogg  Enrico Nicoletto (2013) / GPLv3+
 paratrooper.ogg  Enrico Nicoletto (2013) / GPLv3+
 penalty.ogg  Enrico Nicoletto (2013) / GPLv3+
@@ -11457,7 +11442,6 @@ details.ogg  Horia PELLE 2015 / GPL V3+
 doubleentry.ogg  Horia PELLE 2015 / GPL V3+
 draw.ogg  Horia PELLE 2015 / GPL V3+
 drawletters.ogg  Horia PELLE 2017 / GPL V3+
-drawnumber.ogg  Horia PELLE 2015 / GPL V3+
 drawnumbers.ogg  Horia PELLE 2017 / GPL V3+
 electric.ogg  Horia PELLE 2015 / GPL V3+
 enumerate.ogg  Horia PELLE 2015 / GPL V3+
@@ -11494,10 +11478,6 @@ instruments.ogg  Horia PELLE 2015 / GPL V3+
 intro_gravity.ogg  Horia PELLE 2015 / GPL V3+
 land_safe.ogg  Horia PELLE 2015 / GPL V3+
 lang.ogg  Horia PELLE 2016 / GPL V3+
-lang-nature.ogg  Horia PELLE 2015 / GPL V3+
-lang-object.ogg  Horia PELLE 2015 / GPL V3+
-lang-other.ogg  Horia PELLE 2015 / GPL V3+
-lang-people.ogg  Horia PELLE 2015 / GPL V3+
 leftright.ogg  Horia PELLE 2015 / GPL V3+
 letter-in-word.ogg  Horia PELLE 2017 / GPL V3+
 lightsoff.ogg  Horia PELLE 2015 / GPL V3+
@@ -12758,7 +12738,6 @@ clockgame.ogg  Saša Batistič / GPL V3+
 colors.ogg  Saša Batistič / GPL V3+
 crane.ogg  Saša Batistič / GPL V3+
 doubleentry.ogg  Saša Batistič / GPL V3+
-drawnumber.ogg  Saša Batistič / GPL V3+
 electric.ogg  Saša Batistič / GPL V3+
 enumerate.ogg  Saša Batistič / GPL V3+
 erase.ogg  Saša Batistič / GPL V3+
@@ -12794,6 +12773,7 @@ memory.ogg  Saša Batistič / GPL V3+
 missing-letter.ogg  Saša Batistič / GPL V3+
 money.ogg  Saša Batistič / GPL V3+
 mosaic.ogg  Saša Batistič / GPL V3+
+number_sequence.ogg  Saša Batistič / GPL V3+
 paintings.ogg  Saša Batistič / GPL V3+
 paratrooper.ogg  Saša Batistič / GPL V3+
 penalty.ogg  Saša Batistič / GPL V3+
@@ -14088,7 +14068,6 @@ clockgame.ogg  Feng Jie 2010 / GPL
 colors.ogg  Feng Jie 2010 / GPL
 crane.ogg  Feng Jie 2010 / GPL
 doubleentry.ogg  Feng Jie 2010 / GPL
-drawnumber.ogg  Feng Jie 2010 / GPL
 electric.ogg  Feng Jie 2010 / GPL
 enumerate.ogg  Feng Jie 2010 / GPL
 erase.ogg  Feng Jie 2010 / GPL
@@ -14132,6 +14111,7 @@ missing-letter.ogg  Feng Jie 2010 / GPL
 money.ogg  Feng Jie 2010 / GPL
 money_cents.ogg  Feng Jie 2010 / GPL
 mosaic.ogg  Feng Jie 2010 / GPL
+number_sequence.ogg  Feng Jie 2010 / GPL
 paintings.ogg  Feng Jie 2010 / GPL
 paratrooper.ogg  Feng Jie 2010 / GPL
 penalty.ogg  Feng Jie 2010 / GPL
@@ -14347,7 +14327,6 @@ color_mix.ogg  GPL V3+
 color_mix_light.ogg  GPL V3+
 colors.ogg  GPL V3+
 details.ogg  GPL V3+
-drawnumber.ogg  GPL V3+
 enumerate.ogg  GPL V3+
 erase.ogg  GPL V3+
 erase_2clic.ogg  GPL V3+
@@ -14406,6 +14385,7 @@ money_back.ogg  GPL V3+
 money_back_cents.ogg  GPL V3+
 money_cents.ogg  GPL V3+
 mosaic.ogg  GPL V3+
+number_sequence.ogg  GPL V3+
 numbers-odd-even.ogg  GPL V3+
 penalty.ogg  GPL V3+
 planegame.ogg  GPL V3+
