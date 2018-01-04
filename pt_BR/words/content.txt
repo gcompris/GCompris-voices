@@ -66,7 +66,7 @@ shake.ogg:sacudir
 sing.ogg:cantar
 sip.ogg:sorver
 sit.ogg:sentar
-# sleep.ogg:dormir
+sleep.ogg:dormir
 smell.ogg:cheirar
 smooch.ogg:beijar
 sniff.ogg:farejar
@@ -117,7 +117,7 @@ sweat.ogg:suor
 # teeth.ogg:dentes
 thigh.ogg:coxa
 throat.ogg:garganta
-# wrist.ogg:pulso
+wrist.ogg:pulso
 bib.ogg:babador
 cap.ogg:boné
 cape.ogg:capa
@@ -515,7 +515,7 @@ ship.ogg:navio
 sled.ogg:trenó
 train.ogg:trem
 truck.ogg:caminhão
-black.ogg:preta
+black.ogg:preto
 blue.ogg:azul
 brown.ogg:marrom
 color.ogg:cor
@@ -523,8 +523,8 @@ gray.ogg:cinza
 green.ogg:verde
 orange-color.ogg:laranja
 pink.ogg:rosa
-red.ogg:vermelha
-white.ogg:branca
+red.ogg:vermelho
+white.ogg:branco
 # five.ogg:cinco
 # one.ogg:um
 # ten.ogg:dez
